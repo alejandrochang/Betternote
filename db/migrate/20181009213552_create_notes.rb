@@ -5,7 +5,6 @@ class CreateNotes < ActiveRecord::Migration[5.2]
       t.text :body
       t.integer :user_id, null: false
       t.integer :notebook_id, null: false
-      t.integer :tag_id, null: false
 
       t.timestamps
     end
