@@ -9,6 +9,5 @@ class CreateNotes < ActiveRecord::Migration[5.2]
       t.timestamps
     end
     add_index :notes, :notebook_id
-    add_index :notes, :tag_id
   end
 end

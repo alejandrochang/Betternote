@@ -32,13 +32,12 @@ class User < ApplicationRecord
     self.session_token
   end
 
-  # Associations
-  # has_many :notebooks,
-  # foreign_key: :user_id,
-  # class_name: 'Notebook'
-  #
-  # has_many :notes,
-  # foreign_key: :user_id,
-  # class_name: 'Note'
+  has_many :notebooks,
+  foreign_key: :user_id,
+  class_name: 'Notebook'
+
+  has_many :notes,
+  foreign_key: :user_id,
+  class_name: 'Note'
 
 end
