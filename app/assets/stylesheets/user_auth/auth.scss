@@ -1,0 +1,22 @@
+.form-only {
+  // max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  padding-left: 35px;
+  color: #8a8a8a;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  list-style: none;
+  max-width: 350px;
+  height: 350px;
+  display: flex;
+}
+
+input {
+  width: 90%;
+  padding: 3%;
+  margin-bottom: 12px;
+  font-size: 1.04em;
+  border: 1px solid #d3d3d3;
+}

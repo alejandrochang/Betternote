@@ -32,21 +32,35 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      <div className="session-form">
-        <form onSubmit={this.handleSubmit}>
-          <label> Username
+      <div className="form-only">
+
+
+
+        <form className="session-form" onSubmit={this.handleSubmit}>
+          <label id="username">
             <input
+              for="username"
               type="text"
-              placeholder="Email or username"
+              placeholder="Email address or Username"
               value={this.state.username}
-              onChange={this.handleInput('username')}/>
+              onChange={this.handleInput('username')}
+              required/>
           </label>
-          <label> Password
+          <label id="password">
             <input
+              for="password"
               type="password"
-              placeholder="password"
+              placeholder="Password"
               value={this.state.password}
               onChange={this.handleInput('password')}/>
+          </label>
+          <label id="password">
+            <input
+              for="email"
+              type="email"
+              placeholder="Email"
+              value={this.state.email}
+              onChange={this.handleInput('email')}/>
           </label>
           <button onClick={this.handleSubmit}>Sign Up</button>
         </form>

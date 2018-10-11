@@ -25,9 +25,10 @@ class Home extends React.Component {
         </div>
 
         <div className="signup-form-container">
-          <h2 className="signup-message">Sign Up for Free</h2>
+          <h2 className="signup-message-text">Sign Up for Free</h2>
           <Route component={SignupFormContainer} />
-          <div class="form-only">
+
+          <div>
             <button class="animated-button">
               <span>Sign In as Demo User</span>
             </button>
@@ -38,7 +39,6 @@ class Home extends React.Component {
                 <span>or</span>
               </h3>
             </form>
-
           </div>
         </div>
       </div>
