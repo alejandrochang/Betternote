@@ -1,0 +1,62 @@
+.home-navbar {
+  background-color: white;
+  font-family: "Gotham_SSm_5r", Helvetica, Arial, sans-serif;
+  padding-bottom: 14px  ;
+  padding-top: 14px;
+  border-bottom: 1px solid lightgray;
+
+}
+
+.first-splashview {
+  margin-top:15px;
+  width: 100%;
+}
+
+.big-home-slide {
+  float: left;
+  margin-top: 30px;
+  margin-left: 5%;
+  // margin-right: 5%;
+  margin-bottom: 50px;
+  padding: 6px;
+  padding-right: 40px;
+  width: 50%;
+
+  // transition:
+}
+
+//Meet Betternote..
+.big-slide {
+  padding-left: 45px;
+  padding-right: 55px;
+  // padding-bottom: 5px;
+  // padding-top: 10px;
+  font-size: 80px;
+}
+//Betternote helps you..
+.small-slide {
+  padding-bottom: 5px;
+  padding-left: 36px;
+  padding-right: 55px;
+  font-size: 20px;
+  font-family: gotham, helvetica, arial, sans-serif;
+  color: #b4b4b4;
+}
+
+// navbar img
+.home-logo-img {
+  vertical-align: middle;
+  width: 3%;
+  height: 5%;
+  margin-left: 3%;
+}
+
+//navbar title (BETERNOTE)
+.home-logo-text {
+  vertical-align: middle;
+  font-size: 1.3em;
+  padding-left: 6px;
+  color: #3dbe60;
+  font-family: 'Crimson Text', serif;
+  width: 3%;
+}

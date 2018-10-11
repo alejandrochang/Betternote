@@ -14,11 +14,11 @@ import HomeContainer from './home/home_container';
 const App = () => (
 
   <div>
-    <h1>Betternote, The App</h1>
     <Switch>
       <Route path="/signup" component={SignupContainer}/>
       <Route path="/login" component={LoginContainer}/>
       <Route exact path={'/'} component={HomeContainer}/>
+      <Redirect to='/' />
     </Switch>
   </div>
 );
