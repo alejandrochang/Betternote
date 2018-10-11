@@ -1,5 +1,5 @@
 class Tag < ApplicationRecord
-  validates :name, prsence: true
+  validates :name, presence: true
 
   has_many :taggings,
   foreign_key: :tag_id,
