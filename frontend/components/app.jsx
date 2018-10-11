@@ -9,14 +9,16 @@ import {
 } from 'react-router-dom';
 import SignupContainer from './session/signup_form_container';
 import LoginContainer from './session/login_form_container';
+import HomeContainer from './home/home_container';
 
 const App = () => (
 
   <div>
-    <h1>hello</h1>
+    <h1>Betternote, The App</h1>
     <Switch>
       <Route path="/signup" component={SignupContainer}/>
       <Route path="/login" component={LoginContainer}/>
+      <Route exact path={'/'} component={HomeContainer}/>
     </Switch>
   </div>
 );
