@@ -13,8 +13,8 @@ class SignupForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.processForm(user)
+    this.props.signup(this.state)
+      .then(() => this.props.history.push('/'))
   }
 
   handleInput(field) {
@@ -31,22 +31,32 @@ class SignupForm extends React.Component {
 
 
   render() {
-    return
-    <div>
-      <form onSubmit={this.handleSubmit}>
-        <h1>Sign Up</h1>
-        <label> Username
-          <input onChange={this.handleInput('username')} type="text" value={this.state.username}>
-        </label>
-        <label> Password
-          <input onChange={this.handleInput('password')} type="password" value={this.state.password}>
-        </label>
-        <label> Email
-          <input onChange={this.handleInput('email')} type="email" value={this.state.email}>
-        </label>
-        <input type="submit" value='Sign Up' />
-      </form>
-    </div>
+    return (
+      <div className="session-form">
+        <form onSubmit={this.handleSubmit}>
+          <h2>Sign Up</h2>
+          <label> Username
+            <input
+              type="text"
+              value={this.state.username}
+              onChange={this.handleInput('username')}/>
+          </label>
+          <label> Password
+            <input
+              type="password"
+              value={this.state.password}
+              onChange={this.handleInput('password')}/>
+          </label>
+          <label> Email
+            <input
+              type="text"
+              value={this.state.email}
+              onChange={this.handleInput('email')}/>
+          </label>
+          <button onClick={this.handleSubmit}>Sign Up</button>
+        </form>
+      </div>
+    );
   }
 }
 export default SignupForm;

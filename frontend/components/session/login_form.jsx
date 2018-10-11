@@ -5,7 +5,7 @@ class LoginForm extends React.Component {
     super(props);
     this.state = {
     };
-    // this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(e) {
@@ -28,22 +28,32 @@ class LoginForm extends React.Component {
 
 
   render() {
-    return
-    <div>
-      <form onSubmit={this.handleSubmit}>
-        <h1>Log In</h1>
-        <label> Username
-          <input onChange={this.handleInput('username')} type="text" value={this.state.username}>
-        </label>
-        <label> Password
-          <input onChange={this.handleInput('password')} type="password" value={this.state.password}>
-        </label>
-        <label> Email
-          <input onChange={this.handleInput('email')} type="email" value={this.state.email}>
-        </label>
-        <input type="submit" value='Sign Up' />
-      </form>
-    </div>
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <h1>Log In</h1>
+          <label> Username
+            <input
+              onChange={this.handleInput('username')}
+              type="text"
+              value={this.state.username}/>
+          </label>
+          <label> Password
+            <input
+              onChange={this.handleInput('password')}
+              type="password"
+              value={this.state.password}/>
+          </label>
+          <label> Email
+            <input
+              onChange={this.handleInput('email')}
+              type="email"
+              value={this.state.email}/>
+          </label>
+          <button onClick={this.handleSubmit}>Sign Up</button>
+        </form>
+      </div>
+    )
   }
 }
 export default LoginForm;
