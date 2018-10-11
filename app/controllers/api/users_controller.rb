@@ -1,13 +1,19 @@
 class Api::UsersController < ApplicationController
-
   #Sign Up users (create)
   def create
     @user = User.new(user_params)
     if @user.save
       login(@user)
-      render :show
+      render 'api/users/show'
     else
       render json: @user.errors.full_messages, status: 422
+    end
+  end
+
+  def show
+    @user = User.find(params[:id])
+    if @user
+      render 'api/users/show'
     end
   end
 
@@ -17,5 +23,3 @@ class Api::UsersController < ApplicationController
     params.require(:user).permit(:username, :password, :email)
   end
 end
-
-# Think about using the email as part of the params and the passing of the user

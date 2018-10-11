@@ -14,6 +14,7 @@ const App = () => (
         <h1>The Betternote</h1>
     </header>
     <Switch>
+
     </Switch>
   </div>
 );

@@ -9,10 +9,4 @@ document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
   const root = document.getElementById('root');
   ReactDOM.render(<h1>Betternote Project</h1>, root);
-  window.signup =  signup;
-  window.login = login;
-  window.logout =  logout;
-  const person = {username: 'alejandro', password: 'safdsad', email: 'ryan@cookies'}
-  window.person = person;
-  window.$ = $;
 });
