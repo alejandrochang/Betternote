@@ -51,30 +51,34 @@ class SignupForm extends React.Component {
               for="username"
               type="text"
               placeholder="Username"
-              value={this.state.username}
               onChange={this.handleInput('username')}
-              />
+              required/>
           </label>
           <label id="password">
             <input
               for="password"
               type="password"
               placeholder="Password"
-              value={this.state.password}
               onChange={this.handleInput('password')}
-              />
+              required/>
           </label>
-          <label id="password">
+          <label id="email">
             <input
               for="email"
               type="email"
               placeholder="Email address"
-              value={this.state.email}
               onChange={this.handleInput('email')}
-              />
+              required/>
           </label>
+          <div className="terms-services">
+            <p>By clicking Create Account, I agree to the <a className="privacy-policy">Terms of Service</a> and <a className="privacy-policy">Privacy Policy</a>.
+            </p>
+
+          </div>
           <div className="create-account">
           <button className="sign-up-button"type="submit" onClick={this.handleSubmit}>Create Account</button>
+          <input class="remember-checkbox" type="checkbox"/>
+            <p className="remember-message">Remember me for 30 days</p>
           </div>
         </form>
       </div>
