@@ -33,18 +33,27 @@ class SignupForm extends React.Component {
   render() {
     return (
       <div className="form-only">
-
-
+        <div className="animated-button">
+          <button className="demo-button">
+            <span>Sign In as Demo User</span>
+          </button>
+        </div>
 
         <form className="session-form" onSubmit={this.handleSubmit}>
+          <div>
+            <h3 className="or-container">
+              <span className="or-span">or</span>
+            </h3>
+          </div>
+
           <label id="username">
             <input
               for="username"
               type="text"
-              placeholder="Email address or Username"
+              placeholder="Username"
               value={this.state.username}
               onChange={this.handleInput('username')}
-              required/>
+              />
           </label>
           <label id="password">
             <input
@@ -52,17 +61,21 @@ class SignupForm extends React.Component {
               type="password"
               placeholder="Password"
               value={this.state.password}
-              onChange={this.handleInput('password')}/>
+              onChange={this.handleInput('password')}
+              />
           </label>
           <label id="password">
             <input
               for="email"
               type="email"
-              placeholder="Email"
+              placeholder="Email address"
               value={this.state.email}
-              onChange={this.handleInput('email')}/>
+              onChange={this.handleInput('email')}
+              />
           </label>
-          <button onClick={this.handleSubmit}>Sign Up</button>
+          <div className="create-account">
+          <button className="sign-up-button"type="submit" onClick={this.handleSubmit}>Create Account</button>
+          </div>
         </form>
       </div>
     );

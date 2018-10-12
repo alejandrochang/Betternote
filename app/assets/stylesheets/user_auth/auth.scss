@@ -11,6 +11,7 @@
   max-width: 350px;
   height: 350px;
   display: flex;
+  flex-direction: column;
 }
 
 input {
@@ -19,4 +20,64 @@ input {
   margin-bottom: 12px;
   font-size: 1.04em;
   border: 1px solid #d3d3d3;
+}
+
+h3 {
+  // border-bottom: 1px solid lightgray;
+  font-size: 12px;
+  text-align: center;
+}
+
+.animated-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  margin-bottom: 3px;
+  height: 25px;
+}
+
+.or-container {
+  width: 96%;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  line-height: 0.1em;
+  margin: 20px 0 30px;
+}
+
+.or-span {
+  background: white;
+  font-size: 14px;
+}
+
+.demo-button {
+  width: inherit;
+  padding: 25px 40px;
+  border-radius: 7px;
+  font-size: 25px;
+  letter-spacing: 1.1px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #464646;
+}
+
+.sign-up-button {
+  background-color: #2dbe60;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  
+}
+
+.create-account {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1.1px;
+  font-size: 16px;
+  width: 338px;
+  height: 60px;
 }
