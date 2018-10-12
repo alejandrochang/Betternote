@@ -30,6 +30,10 @@ h3 {
   text-align: center;
 }
 
+h6 {
+
+}
+
 .animated-button {
   display: flex;
   flex-direction: column;
@@ -51,6 +55,7 @@ h3 {
 .or-span {
   background: white;
   font-size: 14px;
+  color: lightgray;
 }
 
 .demo-button {
@@ -61,7 +66,7 @@ h3 {
   letter-spacing: 1.1px;
   font-size: 16px;
   font-weight: 600;
-  color: #464646;
+  color: grey;
 }
 
 .sign-up-button {

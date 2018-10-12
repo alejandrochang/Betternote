@@ -2,7 +2,7 @@ import React from 'react';
 import NavbarContainer from './navbar/navbar_container';
 import SignupFormContainer from '../session/signup_form_container';
 import { Route, withRouter } from "react-router-dom";
-import Splash from './splash/splash';
+import SplashContainer from './splash/splash';
 
 class Home extends React.Component {
   constructor(props) {
@@ -28,6 +28,10 @@ class Home extends React.Component {
         <div className="signup-form-container">
           <h2 className="signup-message-text">Sign Up for Free</h2>
           <Route component={SignupFormContainer} />
+        </div>
+
+        <div>
+          <SplashContainer />
         </div>
       </div>
     );

@@ -64,3 +64,50 @@
 .signup-message-text {
   text-align: center;
 }
+
+// container
+.splash-main {
+  padding-left: 345px;
+  // background-color: blue;
+  display: inline-flex;
+  width: 71%;
+  padding-top: 115px;
+}
+
+// content for container
+.splash-content {
+  // background-color: red;
+  font-family: times;
+  max-width: 305px;
+  margin-bottom: 140px;
+  margin-left: 22px;
+  margin-top: 138px;
+  font-size: 17px;
+
+}
+
+.splash-font {
+  margin-top: 46px;
+  margin-right: 74px;
+  background: transparent;
+  font-size: 105%;
+  margin-left: 25px;
+  text-align: center;
+
+}
+
+.splash-headings {
+  text-align: center;
+  margin-right: 61px;
+}
+
+.splash-headings-special {
+  text-align: center;
+  margin-left: 45px;
+}
+
+.splash-font-special {
+  text-align: center;
+  margin-left: 62px;
+  margin-top: 49px;
+}
