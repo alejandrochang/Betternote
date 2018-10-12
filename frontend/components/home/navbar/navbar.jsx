@@ -30,7 +30,7 @@ class NavBar extends React.Component {
                 </a>
 
                 <a id="nav-login-container">
-                  <a id="nav-login"  href="#/main">Log in</a>
+                  <a id="nav-login" href="#/main">Log in</a>
                 </a>
           </div>
         </nav>

@@ -21,7 +21,6 @@ class LoginForm extends React.Component {
     );
   }
 
-
   render() {
     return (
       <div>
@@ -45,7 +44,7 @@ class LoginForm extends React.Component {
               type="email"
               value={this.state.email}/>
           </label>
-          <button onClick={this.handleSubmit}>Sign Up</button>
+          <button onClick={this.handleSubmit}>Sign In</button>
         </form>
       </div>
     )

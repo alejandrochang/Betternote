@@ -29,7 +29,7 @@ class SignupForm extends React.Component {
       <div className="form-only">
         <div className="animated-button">
           <button className="demo-button">
-            <span>Sign In as Demo User</span>
+            <a id="demo-user" href="#/main"><span>Sign In as Demo User</span></a>
           </button>
         </div>
 

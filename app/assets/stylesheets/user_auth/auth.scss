@@ -80,7 +80,10 @@ h3 {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 700;
+}
 
+.sign-up-button:hover {
+  background-color: #48db7c;
 }
 
 .create-account {
@@ -141,9 +144,15 @@ a#nav-login {
   font-size: 14px;
   font-family: 'Nunito Sans', sans-serif;
   text-decoration: none;
+  color: grey;
 }
 
 a#nav-login-container:hover {
   border: 1px solid #17c955;
   color: #3cbb69;
+}
+
+a#demo-user {
+  text-decoration: none;
+  color: grey;
 }
