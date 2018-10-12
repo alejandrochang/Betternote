@@ -14,7 +14,7 @@ class SignupForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.signup(this.state)
-      .then(() => this.props.history.push('/'))
+      .then(() => this.props.history.push('/main'))
   }
 
   handleInput(field) {
@@ -22,12 +22,6 @@ class SignupForm extends React.Component {
       this.setState({[field]: e.target.value})
     );
   }
-
-  // renderMessage() {
-  //   if (this.props.formType === 'login') {
-  //
-  //   }
-  // }
 
 
   render() {

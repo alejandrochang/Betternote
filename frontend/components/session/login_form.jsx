@@ -11,7 +11,8 @@ class LoginForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user)
+    this.props.login(user).then(() =>
+      this.props.history.push('/main'))
   }
 
   handleInput(field) {
@@ -19,12 +20,6 @@ class LoginForm extends React.Component {
       this.setState({[field]: e.target.value})
     );
   }
-
-  // renderMessage() {
-  //   if (this.props.formType === 'login') {
-  //
-  //   }
-  // }
 
 
   render() {
