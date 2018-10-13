@@ -11,10 +11,11 @@ import SignupContainer from './session/signup_form_container';
 import LoginContainer from './session/login_form_container';
 import HomeContainer from './home/home_container';
 import Main from './main';
+import Modal from './modal/modal';
 
 const App = () => (
-
   <div>
+    <Modal />
     <Switch>
       <Route path="/main" component={Main}/>
       <Route path="/signup" component={SignupContainer}/>

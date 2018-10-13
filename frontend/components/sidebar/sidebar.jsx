@@ -25,7 +25,7 @@ class Sidebar extends React.Component {
       if (this.props.currentUserId) {
         <div className="sidebar-main">
           <div className="sidebar-logo">
-            <img className="sidebar-img" src=""/>
+            <img className="sidebar-img" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
           </div>
 
         </div>
