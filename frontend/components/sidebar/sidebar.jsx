@@ -1,5 +1,5 @@
 import React from 'react';
-import { withROuter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Sidebar extends React.Component {
   constructor(props) {
@@ -20,17 +20,28 @@ class Sidebar extends React.Component {
     };
   }
 
-  render() {
-    return (
-      if (this.props.currentUserId) {
-        <div className="sidebar-main">
-          <div className="sidebar-logo">
-            <img className="sidebar-img" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
-          </div>
+  openModal(field) {
+    return(e) => {
+      e.preventDefault();
+      this.props.openModal(field)
+    }
+  }
 
-        </div>
-      }
-    );
+  render() {
+    if (this.props.currentUserId) {
+      return (
+          <div className="sidebar-main">
+            <h1>In SIDEBAR</h1>
+            <div className="sidebar-logo">
+              <img className="sidebar-img" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
+            </div>
+
+            <div>
+
+            </div>
+          </div>
+      );
+    }
   }
 }
 

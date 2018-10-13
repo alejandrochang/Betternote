@@ -9,6 +9,7 @@
     "jquery": "^3.3.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-modal": "^3.6.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
@@ -26,7 +27,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch --mode=development", 
+    "webpack": "webpack --watch --mode=development",
     "postinstall": "webpack"
   },
   "engines": {
