@@ -10,6 +10,7 @@ class Sidebar extends React.Component {
 
     this.renderDropDown = this.renderDropDown.bind(this);
     this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.logoutUser = this.logoutUser.bind(this);
   }
 
   componentDidMount() {
@@ -30,7 +31,7 @@ class Sidebar extends React.Component {
               <li id="account-info">
                 <div>
                   <img className="dropdown-img-2" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
-                  <span id="name-style">Alejandro Chang</span>
+                  <span id="name-style">{ this.props.username }</span>
                   <img className="blue-check-img" src="https://melbournechapter.net/images/checkmark-transparent-blue-6.png"/>
                 </div>
               </li>
@@ -54,7 +55,7 @@ class Sidebar extends React.Component {
             </ul>
             <div id="grey-line-2"></div>
             <div className="color-logout">
-              <div className="logout-box" onClick={this.props.logout}><span className="logout-button">Sign Out</span></div>
+              <div className="logout-box" onClick={this.logoutUser()}><span className="logout-button">Sign Out</span></div>
             </div>
           </div>
         </div>
@@ -67,7 +68,7 @@ class Sidebar extends React.Component {
   }
 
   logoutUser() {
-    return(e) => {
+    return (e) => {
       e.preventDefault();
       this.props.logout();
       this.props.history.push('/');
@@ -76,7 +77,7 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="sidebar-background">
         <div className="sidebar-main">
           <div classname='dropdown-header' onClick={this.toggleDropdown}>
               <img className="sidebar-img" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
@@ -89,7 +90,7 @@ class Sidebar extends React.Component {
             <input className="search-bar-styling" type="text" placeholder="Search all notes..."/>
           </div>
           <div>
-            
+            <img className="add-note-img" src=""/>
           </div>
         </div>
       </div>
@@ -97,4 +98,4 @@ class Sidebar extends React.Component {
   }
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);

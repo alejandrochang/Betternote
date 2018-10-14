@@ -1,5 +1,5 @@
 json.set! :user do
-    json.extract! @user, :id, :username, :email
+    json.extract! user, :id, :username, :email
 end
 
 # json.set! :user do

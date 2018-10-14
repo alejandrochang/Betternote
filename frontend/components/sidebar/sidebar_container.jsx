@@ -4,7 +4,9 @@ import { logout } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mapStateToProps = state => {
+  console.log(state);
   return {
+    username: state.session.currentUser.user.username,
     currentUserId: state.session.id,
     modal: state.ui.modal
   };
@@ -12,7 +14,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    logout: (id) => dispatch(logout(id)),
+    logout: (user) => dispatch(logout(user)),
     openModal: (modal) => dispatch(opanModal(modal)),
     closeModal: () => dispatch(closeModal()),
   };
