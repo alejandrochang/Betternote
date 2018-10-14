@@ -7,6 +7,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "jquery": "^3.3.1",
+    "material-ui-search-bar": "^1.0.0-beta.13",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-dropdown": "^1.6.2",

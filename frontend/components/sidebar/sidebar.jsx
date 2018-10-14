@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-
 class Sidebar extends React.Component {
   constructor(props) {
     super(props);
@@ -55,7 +54,7 @@ class Sidebar extends React.Component {
             </ul>
             <div id="grey-line-2"></div>
             <div className="color-logout">
-              <div className="logout-button" onClick={this.props.logout}>Sign Out</div>
+              <div className="logout-box" onClick={this.props.logout}><span className="logout-button">Sign Out</span></div>
             </div>
           </div>
         </div>
@@ -86,6 +85,12 @@ class Sidebar extends React.Component {
               <img className="down-arrow-img" src="https://www.thrivingparish.org/wp-content/uploads/2018/01/white-down-arrow-png-2-300x300.png"/>
           </div>
           { this.renderDropDown() }
+          <div className="search-bar">
+            <input className="search-bar-styling" type="text" placeholder="Search all notes..."/>
+          </div>
+          <div>
+            
+          </div>
         </div>
       </div>
     );

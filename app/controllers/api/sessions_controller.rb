@@ -5,9 +5,7 @@ class Api::SessionsController < ApplicationController
       params[:user][:username],
       params[:user][:password]
     )
-    p params[:user][:username]
-    p params[:user][:password]
-    p @user
+
     if @user
       login(@user)
       render '/api/users/show'

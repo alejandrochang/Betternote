@@ -62,7 +62,19 @@
 .logout-button {
   font-family: sans-serif;
   text-align: center;
-  margin-top: 12px ;
+  position: absolute;
+  margin-left: 81px;
+  margin-top: 11px;
+}
+
+.logout-box {
+  padding: 0px;
+  width: 223px;
+  height: 41px;
+}
+
+.logout-box:hover {
+  background-color: #ededed;
 }
 
 .down-arrow-img {
@@ -98,6 +110,24 @@
   margin-left: -21px;
   margin-top: 9px;
   margin-bottom: 18px;
+}
+
+.search-bar-styling {
+  background-color: #3b3d3f;
+  max-width: 217px;
+  margin-top: 18px;
+  border-radius: 4px;
+  height: 29px;
+  font-weight: 300;
+  box-sizing: border-box;
+  color: #ffffff;
+  margin-left: 11px;
+  border: #3b3d3f;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #aaadaf;
 }
 
 #word-account {
