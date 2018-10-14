@@ -1,7 +1,169 @@
 .sidebar-main {
-
+  // border: 3px solid #1a1a1a;
+  // display: flex;
+  // flex-shrink: 0;
+  // flex-direction: column;
+  // color: white;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 241px; /* Set the width of the sidebar */
+  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:  #1a1a1a; /* Black */
+  // border: 3px solid #1a1a1a;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
 
 .sidebar-logo {
 
+}
+
+.sidebar-img {
+  max-width: 32px;
+  margin-left: 20px;
+}
+
+.dropdown-img {
+  max-width: 32px;
+  margin-left: 20px;
+}
+
+.dropdown-img-2 {
+  max-width: 28px;
+  margin-left: -16px;
+  margin-top: 8px;
+}
+
+.dropdown-container {
+  background: #ffffff;
+  margin-left: 18px;
+  z-index: 5;
+  padding: 12px 0;
+  margin-top: 9px;
+  text-align: left;
+  height: 231px;
+  list-style: none;
+  color: #666;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, .16), 0 4px 12px rgba(27, 39, 51, .08);
+  margin-right: 0px;
+}
+
+.blue-check-img {
+  max-width: 15px;
+  margin-left: 132px;
+  position: absolute;
+  margin-top: 18px;
+}
+
+.logout-button {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 12px ;
+}
+
+.down-arrow-img {
+  max-width: 11px;
+  position: absolute;
+  margin-left: 133px;
+  margin-top: 15px;
+}
+
+.dropdown-options {
+  margin-top: 15px;
+}
+
+.standard {
+  margin-left: -21px;
+  margin-top: -2px;
+  margin-bottom: 9px;
+}
+
+.standard-2 {
+  margin-left: -21px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.standard-3 {
+  margin-left: -21px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.standard-4 {
+  margin-left: -21px;
+  margin-top: 9px;
+  margin-bottom: 18px;
+}
+
+#word-account {
+  list-style-type: none;
+  font-size: 15px;
+  color: #b3b3b3;
+  margin-left: -21px;
+  margin-top: -9px;
+}
+
+#account-info {
+  list-style-type: none;
+}
+
+#name-style {
+  letter-spacing: .8px;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 15px;
+  position: absolute;
+  font-family: sans-serif;
+}
+
+#name-style-2 {
+  letter-spacing: .8px;
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: 11px;
+  position: absolute;
+  font-family: sans-serif;
+  color: #ccc;
+  font-weight: 300;
+}
+
+#grey-line {
+  border-bottom: 1px solid #ededed;
+  list-style-type: none;
+  margin-top: -8px;
+}
+
+#grey-line-2 {
+  border-bottom: 1px solid #ededed;
+  list-style-type: none;
+  margin-top: -9px;
+}
+
+#standard {
+  list-style-type: none;
+}
+
+#standard-2 {
+  list-style-type: none;
+}
+
+#standard-3 {
+  list-style-type: none;
+}
+
+#standard-4 {
+  list-style-type: none;
+}
+
+#ul-container {
+  margin-top: 6px;
+}
+
+#ul-container-2 {
+  margin-top: 12px;
 }

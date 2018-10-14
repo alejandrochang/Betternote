@@ -1,18 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { closeModal } from '../../actions/modal_actions';
+import sidebarContainer from '../sidebar/sidebar_container';
 
 function Modal({modal, closeModal}) {
   if (!modal) {
     return null;
   }
-  let component;
-  switch (modal) {
-    case 'sideContainer':
-      break;
-    default:
-      return null;
-  }
+  let component = sidebarContainer;
+
   return (
     <div className="modal-background" onClick={closeModal}>
       <div className="modal-child" onClick={e => e.stopPropagation()}>

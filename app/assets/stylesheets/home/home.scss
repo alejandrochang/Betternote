@@ -14,9 +14,8 @@
 
 .big-home-slide {
   float: left;
-  margin-top: -1px;
+  margin-top: -30px;
   margin-left: 5%;
-  // margin-right: 5%;
   margin-bottom: 50px;
   padding: 6px;
   padding-right: 40px;
@@ -25,7 +24,6 @@
   // transition:
 }
 
-//Meet Betternote..
 .big-slide {
   padding-left: 45px;
   padding-right: 55px;
@@ -33,7 +31,7 @@
   // padding-top: 10px;
   font-size: 80px;
 }
-//Betternote helps you..
+
 .small-slide {
   padding-bottom: 5px;
   padding-left: 36px;
@@ -41,9 +39,9 @@
   font-size: 20px;
   font-family: gotham, helvetica, arial, sans-serif;
   color: #b4b4b4;
+  margin-top: inherit;
 }
 
-// navbar img
 .home-logo-img {
   vertical-align: middle;
   width: 3%;
@@ -51,7 +49,6 @@
   margin-left: 3%;
 }
 
-//navbar title (BETERNOTE)
 .home-logo-text {
   vertical-align: middle;
   font-size: 1.3em;
@@ -65,7 +62,6 @@
   text-align: center;
 }
 
-// container
 .splash-main {
   padding-left: 207px;
   // background-color: blue;
@@ -74,7 +70,6 @@
   padding-top: 115px;
 }
 
-// content for container
 .splash-content {
   // background-color: red;
   font-family: times;
