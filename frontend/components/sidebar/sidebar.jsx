@@ -31,7 +31,7 @@ class Sidebar extends React.Component {
               <li id="account-info">
                 <div>
                   <img className="dropdown-img-2" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
-                  <span id="name-style">{ this.props.username }</span>
+                  <span id="name-style">{this.props.currentUser.username}</span>
                   <img className="blue-check-img" src="https://melbournechapter.net/images/checkmark-transparent-blue-6.png"/>
                 </div>
               </li>
@@ -81,8 +81,7 @@ class Sidebar extends React.Component {
         <div className="sidebar-main">
           <div classname='dropdown-header' onClick={this.toggleDropdown}>
               <img className="sidebar-img" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
-              <span id="name-style-2">Alejandro Chang</span>
-              <a>{ this.props.username }</a>
+              <span id="name-style-2">{this.props.currentUser.username}</span>
               <img className="down-arrow-img" src="https://www.thrivingparish.org/wp-content/uploads/2018/01/white-down-arrow-png-2-300x300.png"/>
           </div>
           { this.renderDropDown() }

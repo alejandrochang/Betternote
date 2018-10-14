@@ -4,10 +4,8 @@ import { logout } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mapStateToProps = state => {
-  console.log(state);
   return {
-    username: state.session.currentUser.user.username,
-    currentUserId: state.session.id,
+    currentUser: state.session.currentUser,
     modal: state.ui.modal
   };
 };
