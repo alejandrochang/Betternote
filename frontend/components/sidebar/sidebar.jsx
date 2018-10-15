@@ -5,11 +5,14 @@ class Sidebar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dropdownVisible: false
+      dropdownVisible: false,
+      dropdownVisibleTwo: false
     };
 
+    this.renderDropDownTwo = this.renderDropDownTwo.bind(this);
     this.renderDropDown = this.renderDropDown.bind(this);
     this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.toggleDropdownTwo = this.toggleDropdownTwo.bind(this);
     this.logoutUser = this.logoutUser.bind(this);
   }
 
@@ -62,9 +65,27 @@ class Sidebar extends React.Component {
       )
   }
 
+  renderDropDownTwo() {
+    let { dropdownVisibleTwo } = this.state;
+    return !dropdownVisibleTwo
+      ? null
+      : (
+        <div className="dropdown-container-2">
+          <div className="notebook-list">
+            <span>Dropdown</span>
+          </div>
+        </div>
+      )
+  }
+
   toggleDropdown() {
     let dropdownVisible = !this.state.dropdownVisible;
     this.setState({ dropdownVisible });
+  }
+
+  toggleDropdownTwo() {
+    let dropdownVisibleTwo = !this.state.dropdownVisibleTwo;
+    this.setState({ dropdownVisibleTwo });
   }
 
   logoutUser() {
@@ -88,7 +109,7 @@ class Sidebar extends React.Component {
           <div className="search-bar">
             <input className="search-bar-styling" type="text" placeholder="Search all notes..."/>
             <div className="add-icon-container">
-              <img className="add-note-img" src="https://cdn2.iconfinder.com/data/icons/math-calculator-functions/512/add-plus-math-function-round-green-512.png"/>
+              <img className="add-note-img" src="https://image.flaticon.com/icons/svg/148/148764.svg"/>
               <span className="new-note">New Note</span>
             </div>
           </div>
@@ -104,7 +125,8 @@ class Sidebar extends React.Component {
                 <img className="notes-icon" src="https://mbtskoudsalg.com/images/notes-grey-icons-png-1.png"/>
                 <span className="all-notes-words">All Notes</span>
               </div>
-              <div className="notebooks">
+              <div className="notebooks" onClick={this.toggleDropdownTwo}>
+                { this.renderDropDownTwo() }
                 <img className="sideways-playbutton" src="https://amberream.github.io/youtube-power-up/images/yt_icon_gray.png"/>
                 <img className="notebook-img" src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/notebook.png"/>
                 <span className="sidebar-words">Notebooks</span>
@@ -129,7 +151,7 @@ class Sidebar extends React.Component {
           </div>
           <div className="sidebar-footer">
             <div className="gray-line-3"></div>
-            <img className="trumpet-img" src="https://t3.ftcdn.net/jpg/02/23/33/00/240_F_223330058_8m0YC4y1Fl0xrjEEuUT88bFUqLJcfnDe.jpg"/>
+            <img className="trumpet-img" src="https://cdn0.iconfinder.com/data/icons/people-and-lifestyle/64/music-trumpet-art-orchestra-512.png"/>
             <span className="feedback-words">Send Feedback</span>
           </div>
         </div>
