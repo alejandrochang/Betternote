@@ -87,9 +87,50 @@ class Sidebar extends React.Component {
           { this.renderDropDown() }
           <div className="search-bar">
             <input className="search-bar-styling" type="text" placeholder="Search all notes..."/>
+            <div className="add-icon-container">
+              <img className="add-note-img" src="https://cdn2.iconfinder.com/data/icons/math-calculator-functions/512/add-plus-math-function-round-green-512.png"/>
+              <span className="new-note">New Note</span>
+            </div>
           </div>
-          <div>
-            <img className="add-note-img" src=""/>
+
+          <div className="shortcuts-container">
+            <div className="shortcuts-img">
+                <img className="sideways-playbutton" src="https://amberream.github.io/youtube-power-up/images/yt_icon_gray.png"/>
+                <img className="sideways-star" src="http://www.clker.com/cliparts/2/4/T/f/0/4/star-grey-hi.png"/>
+                <span className="sidebar-words">Shortcuts</span>
+            </div>
+            <div className="sidebar-list">
+              <div className="all-notes">
+                <img className="notes-icon" src="https://mbtskoudsalg.com/images/notes-grey-icons-png-1.png"/>
+                <span className="all-notes-words">All Notes</span>
+              </div>
+              <div className="notebooks">
+                <img className="sideways-playbutton" src="https://amberream.github.io/youtube-power-up/images/yt_icon_gray.png"/>
+                <img className="notebook-img" src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/notebook.png"/>
+                <span className="sidebar-words">Notebooks</span>
+              </div>
+              <div className="shared-with-me">
+                <img className="people-img" src="https://cdn0.iconfinder.com/data/icons/superuser-web-kit/512/686912-users_people_men_humans_heads_persons-512.png"/>
+                <span className="sidebar-words">Shared with Me</span>
+              </div>
+              <div className="sidebar-tags">
+                <img className="tags-img" src="http://icon-park.com/imagefiles/tag_gray.png"/>
+                <span className="sidebar-words">Tags</span>
+              </div>
+              <div className="sidebar-trash">
+                <img className="trash-img" src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-8/256/Trash-can-icon.png"/>
+                <span className="sidebar-words">Trash</span>
+              </div>
+              <div className="sidebar-upgrade">
+                <img className="upgrade-img" src="https://cdn4.iconfinder.com/data/icons/weather-394/65/25-512.png"/>
+                <span className="sidebar-words">Upgrade</span>
+              </div>
+            </div>
+          </div>
+          <div className="sidebar-footer">
+            <div className="gray-line-3"></div>
+            <img className="trumpet-img" src="https://t3.ftcdn.net/jpg/02/23/33/00/240_F_223330058_8m0YC4y1Fl0xrjEEuUT88bFUqLJcfnDe.jpg"/>
+            <span className="feedback-words">Send Feedback</span>
           </div>
         </div>
       </div>
