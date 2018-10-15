@@ -109,7 +109,7 @@ class Sidebar extends React.Component {
           <div className="search-bar">
             <input className="search-bar-styling" type="text" placeholder="Search all notes..."/>
             <div className="add-icon-container">
-              <img className="add-note-img" src="https://image.flaticon.com/icons/svg/148/148764.svg"/>
+              <img className="add-note-img" src="https://cdn0.iconfinder.com/data/icons/ie_Bright/512/plus_add_green.png"/>
               <span className="new-note">New Note</span>
             </div>
           </div>

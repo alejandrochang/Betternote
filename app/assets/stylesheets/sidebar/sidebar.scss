@@ -151,7 +151,7 @@
 }
 
 .shortcuts-img:hover {
-  color: #626466;
+  color: #404040;
 }
 
 .shortcuts-img {
@@ -165,10 +165,6 @@
   margin-right: 1px;
   user-select: none;
   transition: all 0.1s ease-out;
-}
-
-.shortcuts-img:hover {
-  color: lightgrey;
 }
 
 .sideways-star {
@@ -211,6 +207,7 @@
 
 .notes-icon {
   max-width: 18px;
+  margin-left: 18px;
 }
 
 .people-img {
@@ -239,7 +236,7 @@
 
 .gray-line-3 {
   border-top: 1px solid rgba(180, 180, 180, 0.14902);
-  margin-top: 420px;
+  margin-top: 401px;
 }
 
 .trumpet-img {
@@ -274,15 +271,15 @@
 .all-notes {
   display: flex;
   align-items: center;
-  flex-direction: row;
   height: 32px;
   font-size: 14px;
   line-height: 32px;
   padding: 0 8px 0 18px;
-  margin-left: 18px;
+  margin-left: 1px;
   margin-right: 1px;
   user-select: none;
   transition: all 0.1s ease-out;
+  width: 213px;
 }
 
 .shortcuts-img:hover {
