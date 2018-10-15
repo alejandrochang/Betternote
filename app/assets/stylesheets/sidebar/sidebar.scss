@@ -313,15 +313,22 @@
 }
 
 .dropdown-container-2 {
-  width: 20px;
-  height:20px;
-  background-color: red;
+  // width: 167px;
+  // margin-top: 35px;
+  // position: absolute;
+  // height: 30px;
+  // margin-left: 22px;
+  // background-color: red;
 }
 
 .notebook-list{
-  width: 10px;
-  height: 10px;
-  background-color: blue;
+  // width: 10px;
+  // height: 10px;
+  // background-color: blue;
+}
+
+.notebook-dropdown-style {
+  color: white;
 }
 
 .shared-with-me {
@@ -333,6 +340,7 @@
   line-height: 32px;
   padding: 0 8px 0 18px;
   margin-right: 1px;
+  margin-top: 2px;
   user-select: none;
   transition: all 0.1s ease-out;
 }

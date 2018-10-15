@@ -72,7 +72,7 @@ class Sidebar extends React.Component {
       : (
         <div className="dropdown-container-2">
           <div className="notebook-list">
-            <span>Dropdown</span>
+            <span className="notebook-dropdown-style"></span>
           </div>
         </div>
       )

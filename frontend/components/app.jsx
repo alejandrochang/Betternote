@@ -12,14 +12,15 @@ import LoginContainer from './session/login_form_container';
 import HomeContainer from './home/home_container';
 import Main from './main';
 import Modal from './modal/modal';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div>
     <Modal />
     <Switch>
       <Route path="/main" component={Main}/>
-      <Route path="/signup" component={SignupContainer}/>
-      <Route path="/login" component={LoginContainer}/>
+      <AuthRoute path="/signup" component={SignupContainer}/>
+      <AuthRoute path="/login" component={LoginContainer}/>
       <Route exact path={'/'} component={HomeContainer}/>
       <Redirect to='/' />
     </Switch>
