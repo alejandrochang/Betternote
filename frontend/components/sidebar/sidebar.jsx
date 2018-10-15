@@ -43,17 +43,17 @@ class Sidebar extends React.Component {
             <ul id="ul-container-2">
               <li id="standard">
                 <div className="color-div">
-                  <div className="standard">Settings</div>
+                  <div className="standard"><span className="dropdown-words">Settings</span></div>
                 </div>
               </li>
               <li id="standard-2">
-                <div className="standard-2">Help</div>
+                <div className="standard-2"><span className="dropdown-words">Help</span></div>
               </li>
               <li id="standard-3">
-                <div className="standard-3">What's new in Betternote Web</div>
+                <div className="standard-3"><span className="dropdown-words">What's new in Betternote Web</span></div>
               </li>
               <li id="standard-4">
-                <div className="standard-4">Switch to older version of Betternote</div>
+                <div className="standard-4"><span className="dropdown-words">Switch to older version of Betternote</span></div>
               </li>
             </ul>
             <div id="grey-line-2"></div>
@@ -99,13 +99,13 @@ class Sidebar extends React.Component {
   render() {
     return (
       <div className="sidebar-background">
+        { this.renderDropDown() }
         <div className="sidebar-main">
           <div classname='dropdown-header' onClick={this.toggleDropdown}>
               <img className="sidebar-img" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
               <span id="name-style-2">{this.props.currentUser.username}</span>
               <img className="down-arrow-img" src="https://www.thrivingparish.org/wp-content/uploads/2018/01/white-down-arrow-png-2-300x300.png"/>
           </div>
-          { this.renderDropDown() }
           <div className="search-bar">
             <input className="search-bar-styling" type="text" placeholder="Search all notes..."/>
             <div className="add-icon-container">

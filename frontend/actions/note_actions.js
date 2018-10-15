@@ -1,17 +1,27 @@
 import * as NoteApiUtil from '../util/note_api_util';
 
-export cont RECEIVE_NOTES = 'RECEIVE_NOTES';
-export cont RECEIVE_NOTE = 'RECEIVE_NOTE';
-export cont DELETE_NOTE = 'DELETE_NOTE';
-export cont RECEIVE_NOTE_ERRORS = 'RECEIVE_NOTE_ERRORS';
+export const RECEIVE_NOTES = 'RECEIVE_NOTES';
+export const RECEIVE_NOTE = 'RECEIVE_NOTE';
+export const DELETE_NOTE = 'DELETE_NOTE';
+export const RECEIVE_NOTE_ERRORS = 'RECEIVE_NOTE_ERRORS';
 
-export const fetchNotes = () => dispatch => (
-  NoteApiUtil.fetchNotes().then(notes =>
-    dispatch({type: RECEIVE_NOTES, notes}), error => dispatch ({
-      type: RECEIVE_NOTE_ERRORS, errors: error.responseJSON
-    })
-  )
-);
+export const fetchNotes = () => dispatch => {
+  debugger
+  return (
+    NoteApiUtil.fetchNotes().then(notes =>
+      dispatch({type: RECEIVE_NOTES, notes}), error => dispatch ({
+        type: RECEIVE_NOTE_ERRORS, errors: error.responseJSON
+      })
+    )
+  );
+}
+
+//   NoteApiUtil.fetchNotes().then(notes =>
+//     dispatch({type: RECEIVE_NOTES, notes}), error => dispatch ({
+//       type: RECEIVE_NOTE_ERRORS, errors: error.responseJSON
+//     })
+//   )
+// );
 
 export const fetchNote = (id) => dispatch => (
   NoteApiUtil.fetchNote(id).then(note =>
@@ -44,3 +54,9 @@ export const deleteNote = (id) => dispatch => (
     })
   )
 );
+
+window.fetchNotes = fetchNotes;
+window.fetchNote = fetchNote;
+window.createNote = createNote;
+window.updateNote = updateNote;
+window.deleteNote = deleteNote;

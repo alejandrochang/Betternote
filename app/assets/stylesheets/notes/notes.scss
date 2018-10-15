@@ -1,0 +1,46 @@
+.notebar-header-container {
+  margin-left: 238px;
+  min-width: 345px;
+  height: 102px;
+  width: 239px;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  background-color: #efefef;
+  padding-top: 20px;
+}
+
+.notebar-under-title {
+  left: 0px;
+  min-width: 345px;
+  margin-top: 84px;
+  background-color: #efefef;
+  height: 34px;
+}
+
+.notes-count {
+  font-family: monospace;
+  margin-top: 4px;
+  margin-left: 25px;
+  color: darkgray;
+  position: absolute;
+}
+
+.note-tag-dropdown {
+  max-width: 20px;
+  position: absolute;
+  padding-left: 316px;
+  margin-top: 5px;
+}
+
+.notebar-words {
+  font-size: 20px;
+  margin-top: 11px;
+  margin-left: 28px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.notebar-title-container {
+  min-width: 20px;
+}
