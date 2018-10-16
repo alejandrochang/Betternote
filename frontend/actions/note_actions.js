@@ -6,7 +6,6 @@ export const DELETE_NOTE = 'DELETE_NOTE';
 export const RECEIVE_NOTE_ERRORS = 'RECEIVE_NOTE_ERRORS';
 
 export const fetchNotes = () => dispatch => {
-  debugger
   return (
     NoteApiUtil.fetchNotes().then(notes =>
       dispatch({type: RECEIVE_NOTES, notes}), error => dispatch ({

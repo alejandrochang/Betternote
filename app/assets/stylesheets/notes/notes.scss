@@ -6,23 +6,25 @@
   position: absolute;
   top: 0;
   left: 3px;
-  background-color: #efefef;
+  background-color: #f4f4f4;
   padding-top: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
 }
 
 .notebar-under-title {
   left: 0px;
   min-width: 345px;
   margin-top: 84px;
-  background-color: #efefef;
+  background-color: #f4f4f4;
   height: 34px;
 }
 
 .notes-count {
   font-family: monospace;
-  margin-top: 4px;
-  margin-left: 25px;
+  margin-top: 76px;
+  margin-left: 30px;
   color: darkgray;
+  font-size: 13px;
   position: absolute;
 }
 
@@ -30,7 +32,7 @@
   max-width: 20px;
   position: absolute;
   padding-left: 316px;
-  margin-top: 5px;
+  margin-top: 74px;
 }
 
 .notebar-words {
@@ -39,8 +41,20 @@
   margin-left: 28px;
   position: absolute;
   overflow: hidden;
+  color: dimgray;
 }
 
 .notebar-title-container {
   min-width: 20px;
+}
+
+.gray-line-notebar-right {
+  border-right: 1px solid #e6e6e6;
+  height: 100vh;
+}
+
+.gray-line-notebar {
+  border-top: 1px solid #e6e6e6;
+  position: static;
+  margin-top: -532px;
 }
