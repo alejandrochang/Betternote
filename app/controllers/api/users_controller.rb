@@ -1,12 +1,9 @@
 class Api::UsersController < ApplicationController
   #Sign Up users (create)
-  def show
-
-    @user = User.find(params[:id])
-  end
 
   def create
     @user = User.new(user_params)
+    @notebook = Notebook.create(notebook_params)
     if @user.save
       login(@user)
       render 'api/users/show'

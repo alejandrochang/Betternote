@@ -1,7 +1,7 @@
 class Api::NotebooksController < ApplicationController
 
   def index
-    @notebooks = current_user.notebooks
+    @notebooks = Notebook.all
   end
 
   def create
@@ -41,5 +41,5 @@ class Api::NotebooksController < ApplicationController
   def notebook_params
     params.require(:notebook).permit(:title, :user_id)
   end
-  
+
 end

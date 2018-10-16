@@ -21,7 +21,11 @@ class Notes extends React.Component {
   }
 
   renderAllNotes() {
-    //render all notes and sends it to Notes Item
+    if (this.props.notes) {
+      return this.props.notes.map((note) =>
+        <NotesItem props={this.props} key={note.id} note={note}></NotesItem>
+      );
+    }
   }
 
   renderTitle() {
@@ -40,6 +44,9 @@ class Notes extends React.Component {
           <img className="note-tag-dropdown" src="http://icons.iconarchive.com/icons/icons8/ios7/256/Ecommerce-Price-Tag-icon.png"/>
           <div className="gray-line-notebar-right"></div>
           <div className="gray-line-notebar"></div>
+        </div>
+        <div className="all-notes-individually">
+          {this.renderAllNotes()}
         </div>
       </div>
     );

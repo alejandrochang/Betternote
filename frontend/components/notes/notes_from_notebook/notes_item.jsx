@@ -13,21 +13,16 @@ class NotesListItem extends React.Component {
     }
   }
 
+
   render() {
     return (
       <div>
         <div className="individual-note">
-          <div className="note-title-container">
-            <p className="note-title">
-            </p>
-            <p className="note-date">
-            </p>
-            <p className="note-body">
-            </p>
+          <div className="note-container">
+            <div className="note-title"><span className="note-words-1">{this.props.note.title}</span></div>
+            <div className="note-body"><span className="note-words-2">{this.props.note.body}</span></div>
+            <div className="note-date"><span className="note-words-3">{new Date(this.props.note.updated_at.toUpperCase()).toDateString()}</span></div>
           </div>
-        </div>
-        <div className="delete-note">
-          <button className="delete-note-button" onClick={this.deleteNote()}/>
         </div>
       </div>
     );
