@@ -1,6 +1,6 @@
 class Api::NotesController < ApplicationController
   def index
-    @notes = current_user.notes
+    @notes = Note.all
   end
 
   def create

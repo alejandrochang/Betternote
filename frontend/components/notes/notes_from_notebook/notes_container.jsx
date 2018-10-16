@@ -3,6 +3,8 @@ import Notes from './notes';
 import {
   fetchNotes,
   fetchNote,
+  fetchCurrentNote,
+  closeCurrentNote,
   deleteNote
 } from '../../../actions/note_actions';
 
@@ -16,7 +18,9 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchNotes: () => dispatch(fetchNotes()),
     fetchNote: id => dispatch(fetchNote(id)),
-    deleteNote: id => dispatch(deleteNote(id))
+    deleteNote: id => dispatch(deleteNote(id)),
+    fetchCurrentNote: (note) => dispatch(fetchCurrentNote(note)),
+    closeCurrentNote: () => dispatch(closeCurrentNote())
   };
 }
 

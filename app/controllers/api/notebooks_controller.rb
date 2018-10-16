@@ -25,19 +25,21 @@ class Api::NotebooksController < ApplicationController
   def destroy
     @notebook = current_user.notebooks.find(params[:id])
     if @notebook
-      @notes = @notebook.notes.map{|note| note.id}
+      @notes = @notebook.notes.map{ |note| note.id}
       @notebook.notes.each do |note|
         note.destroy
       end
       @notebook.destroy
       render :show
     else
-      render json: ["Could not delete your notebook."], status: 422
+      render json: ["Sorry, could not delete your notebook."], status: 422
     end
   end
 
-private
+  private
+
   def notebook_params
-    params.require(:notebook).permit(:title, :author_id)
+    params.require(:notebook).permit(:title, :user_id)
   end
+  
 end

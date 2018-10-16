@@ -70,6 +70,7 @@
   margin-left: 4px;
   border-radius: 1px;
   height: 44px;
+  cursor: pointer;
 }
 
 .logout-box:hover {
@@ -81,6 +82,7 @@
   position: absolute;
   margin-left: 133px;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .dropdown-options {
@@ -93,6 +95,7 @@
   margin-top: 13px;
   margin-bottom: 7px;
   height: 23px;
+  cursor: pointer;
 }
 
 .standard:hover {
@@ -104,6 +107,7 @@
   margin-top: -4px;
   margin-bottom: 9px;
   height: 24px;
+  cursor: pointer;
 }
 
 .standard-2:hover {
@@ -115,6 +119,7 @@
   margin-top: -7px;
   margin-bottom: 9px;
   height: 24px;
+  cursor: pointer;
 }
 
 .standard-3:hover {
@@ -126,6 +131,7 @@
   margin-top: -5px;
   margin-bottom: 15px;
   height: 27px;
+  cursor: pointer;
 }
 
 .standard-4:hover {
@@ -159,13 +165,13 @@
 .add-note-img {
   max-width: 34px;
   margin-left: 21px;
-  margin-top: 4px;
+  margin-top: 11px;
 }
 
 .new-note {
   color: white;
   position: absolute;
-  margin-top: 16px;
+  margin-top: 22px;
   margin-left: 12px;
   font-size: 14px;
   font-weight: 500;
@@ -174,6 +180,7 @@
 
 .add-icon-container {
   height: 71px;
+  cursor: pointer;
 }
 
 .sideways-playbutton {
@@ -195,6 +202,7 @@
   margin-right: 1px;
   user-select: none;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
 
 .sideways-star {
@@ -283,6 +291,7 @@
   position: absolute;
   margin-top: 8px;
   margin-left: 12px;
+  cursor: pointer;
 }
 
 .notebooks {
@@ -296,6 +305,7 @@
   margin-right: 1px;
   user-select: none;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
 
 .all-notes {
@@ -310,6 +320,7 @@
   user-select: none;
   transition: all 0.1s ease-out;
   width: 213px;
+  cursor: pointer;
 }
 
 .shortcuts-img:hover {
@@ -370,6 +381,7 @@
   margin-top: 2px;
   user-select: none;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
 
 .sidebar-tags {
@@ -383,6 +395,7 @@
   margin-right: 1px;
   user-select: none;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
 
 .sidebar-trash {
@@ -396,6 +409,7 @@
   margin-right: 1px;
   user-select: none;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
 
 .sidebar-upgrade {
@@ -409,7 +423,9 @@
   margin-right: 1px;
   user-select: none;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
+
 
 #word-account {
   list-style-type: none;
