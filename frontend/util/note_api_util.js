@@ -16,7 +16,7 @@ export const fetchNote = (id) => {
 export const createNote = (note) => (
   $.ajax({
     method: "POST",
-    url: `api/notes`,
+    url: `api/notebooks/${note.notebook_id}/notes`,
     data: { note }
   })
 );

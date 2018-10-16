@@ -18,10 +18,10 @@ const App = () => (
   <div>
     <Modal />
     <Switch>
-      <Route path="/main" component={Main}/>
+      <ProtectedRoute path="/main" component={Main}/>
       <AuthRoute path="/signup" component={SignupContainer}/>
       <AuthRoute path="/login" component={LoginContainer}/>
-      <Route exact path={'/'} component={HomeContainer}/>
+      <AuthRoute exact path={'/'} component={HomeContainer}/>
       <Redirect to='/' />
     </Switch>
   </div>

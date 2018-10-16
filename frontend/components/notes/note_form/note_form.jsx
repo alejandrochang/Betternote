@@ -6,10 +6,13 @@ class NoteForm extends React.Component {
     this.state = {title: "", body: ""};
   }
 
+  
   render() {
 
     return(
+      <div>
 
+      </div>
     );
   }
 }

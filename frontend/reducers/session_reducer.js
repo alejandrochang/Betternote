@@ -5,7 +5,7 @@ import {
 
 // default state if we don't have a current user
 const _nullSession = Object.freeze({
-  id: null
+  currentUser: {id: null}
 });
 
 const sessionReducer = (state = _nullSession, action) => {

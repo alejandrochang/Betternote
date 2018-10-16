@@ -9,6 +9,7 @@ class Sidebar extends React.Component {
       dropdownVisibleTwo: false
     };
 
+    this.handleNewNote = this.handleNewNote.bind(this);
     this.renderDropDownTwo = this.renderDropDownTwo.bind(this);
     this.renderDropDown = this.renderDropDown.bind(this);
     this.toggleDropdown = this.toggleDropdown.bind(this);
@@ -96,6 +97,10 @@ class Sidebar extends React.Component {
     };
   }
 
+  handleNewNote() {
+    this.props.addNewNote({notebook_id: 1, title: "Untitled", user_id: this.props.currentUser.id});
+  }
+
   render() {
     return (
       <div className="sidebar-background">
@@ -108,7 +113,7 @@ class Sidebar extends React.Component {
           </div>
           <div className="search-bar">
             <input className="search-bar-styling" type="text" placeholder="Search all notes..."/>
-            <div className="add-icon-container">
+            <div onClick={this.handleNewNote} className="add-icon-container">
               <img className="add-note-img" src="https://cdn0.iconfinder.com/data/icons/ie_Bright/512/plus_add_green.png"/>
               <span className="new-note">New Note</span>
             </div>

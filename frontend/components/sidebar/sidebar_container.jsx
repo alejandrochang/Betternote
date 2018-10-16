@@ -2,6 +2,7 @@ import Sidebar from './sidebar';
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
+import {createNote} from '../../actions/note_actions';
 
 const mapStateToProps = state => {
   return {
@@ -12,9 +13,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    logout: (user) => dispatch(logout(user)),
+    logout: () => dispatch(logout()),
     openModal: (modal) => dispatch(opanModal(modal)),
     closeModal: () => dispatch(closeModal()),
+    addNewNote: (note) => dispatch((createNote(note)))
   };
 };
 
