@@ -9,6 +9,7 @@ class SignupForm extends React.Component {
       email: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   handleSubmit(e) {
@@ -25,13 +26,19 @@ class SignupForm extends React.Component {
     );
   }
 
+  handleDemo(e) {
+    e.preventDefault();
+    this.props
+    .login({username: "demo-user", password: "demo12345", email: "demo@gmail.com"})
+    .then(() => this.props.history.push("/main"));
+  }
 
   render() {
     return (
       <div className="form-only">
         <div className="animated-button">
-          <button className="demo-button">
-            <a id="demo-user" href="#/main"><span>Sign In as Demo User</span></a>
+          <button className="demo-button hvr-pulse" id="demo-user" onClick={this.handleDemo}>
+            <span>Sign In as Demo User</span>
           </button>
         </div>
 

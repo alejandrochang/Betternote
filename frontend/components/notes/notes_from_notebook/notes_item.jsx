@@ -3,13 +3,19 @@ import React from 'react';
 class NotesListItem extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props)
+  }
+
+  currentWorkingNote() {
+    this.props.props.fetchCurrentNote(this.props.note.id);
   }
 
   deleteNote() {
     return e => {
       e.preventDefault();
       e.stopPropagation();
-      this.props.deleteNote();
+      this.props.props.deleteNote(this.props.note.id);
+      this.props.props.closeCurrentNote();
     }
   }
 
