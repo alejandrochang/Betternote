@@ -52,7 +52,7 @@ class LoginForm extends React.Component {
                       onChange={this.handleInput('email')}
                       type="email"
                       value={this.state.email}
-                      reuired/>
+                      required/>
                   </label>
                   <label>
                     <input

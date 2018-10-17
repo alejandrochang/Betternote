@@ -1,13 +1,13 @@
 .notebar-header-container {
+  border-right: 1px solid #e6e6e6;
+  overflow-y: scroll;
+  height: 100vh;
   margin-left: 238px;
   min-width: 345px;
-  height: 102px;
   width: 239px;
-  position: absolute;
   top: 0;
   left: 3px;
   background-color: #f4f4f4;
-  padding-top: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
 }
 
@@ -28,36 +28,41 @@
   position: absolute;
 }
 
+.notes-count-container {
+  height: 100px;
+}
+
 .note-tag-dropdown {
   max-width: 20px;
+  padding-left: 314px;
+  padding-top: 99px;
   position: absolute;
-  padding-left: 316px;
-  margin-top: 74px;
 }
 
 .notebar-words {
   font-size: 20px;
-  margin-top: 11px;
+  margin-top: 22px;
   margin-left: 28px;
-  position: absolute;
+  margin-bottom: -18px;
   overflow: hidden;
   color: dimgray;
 }
 
 .notebar-title-container {
   min-width: 20px;
-}
-
-.gray-line-notebar-right {
-  border-right: 1px solid #e6e6e6;
-  height: 100vh;
-  background-color: #f4f4f4;
+  position: fixed;
+  overflow: hiddn;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  transition: width 0.1s linear, border 0s linear 0.1s;
 }
 
 .gray-line-notebar {
   border-top: 1px solid #e6e6e6;
-  position: static;
-  margin-top: -532px;
+  margin-left: 4px;
+  margin-right: -240px;
+  margin-top: 12px;
 }
 
 .individual-note {
@@ -68,8 +73,7 @@
 }
 
 .note-container {
-  // padding: 15px 24px 15px 25px;
-  padding: 15px 24px 75px 25px;
+  padding: 15px 19px 28px 25px;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0);
   border-bottom: 1px solid #e6e6e6;
@@ -106,14 +110,16 @@
 
 .note-words-2 {
   font-size: 12px;
-  position: absolute;
   height: 40px;
   margin-top: 11px;
 }
 
 .note-words-3 {
   font-size: 12px;
-  position: absolute;
   color: darkgrey;
   margin-top: 44px;
+}
+
+.all-notes-individually {
+  padding-top: 140px;
 }
