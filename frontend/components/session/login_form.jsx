@@ -8,6 +8,10 @@ class LoginForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount() {
+    this.props.clearSessionErrors();
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
@@ -20,6 +24,18 @@ class LoginForm extends React.Component {
       this.setState({[field]: e.target.value})
     );
   }
+
+  renderErrors2() {
+   return(
+     <ul>
+       {this.props.errors.map((error, i) => (
+         <li className="error-container" key={`error-${i}`}>
+          {error}
+        </li>
+        ))}
+      </ul>
+    );
+   }
 
   render() {
     return (
@@ -35,6 +51,7 @@ class LoginForm extends React.Component {
                     <img className="google-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png"/>
                   </span>
                   <h3><span>or</span></h3>
+                  <div className="sign-error-container"><span className="signinError">{this.renderErrors2()}</span></div>
               </div>
               <div className="login-form">
                 <form className="form-styling" onSubmit={this.handleSubmit}>
@@ -47,6 +64,7 @@ class LoginForm extends React.Component {
                       required/>
                   </label>
                   <label>
+                    <div className="sign-error-container"><span className="signinError">{this.renderErrors2()}</span></div>
                     <input
                       placeholder="Email address"
                       onChange={this.handleInput('email')}

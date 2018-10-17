@@ -12,6 +12,22 @@ class SignupForm extends React.Component {
     this.handleDemo = this.handleDemo.bind(this);
   }
 
+  componentDidMount() {
+    this.props.clearSessionErrors();
+  }
+
+  renderErrors() {
+   return(
+     <ul>
+       {this.props.errors.map((error, i) => (
+         <li className="error-container" key={`error-${i}`}>
+          {error}
+        </li>
+        ))}
+      </ul>
+    );
+   }
+
   handleSubmit(e) {
     e.preventDefault();
     this.props.signup(this.state)
@@ -58,6 +74,7 @@ class SignupForm extends React.Component {
               required/>
           </label>
           <label id="password">
+            <div className="error-container"><span className="loginError">{this.renderErrors()}</span></div>
             <input
               for="password"
               type="password"

@@ -391,3 +391,35 @@ a#demo-user:hover {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+.loginError {
+  color: orangered;
+  padding: 6px;
+  margin: 18px;
+}
+
+.error-container {
+  list-style-type: none;
+  width: 125px;
+  margin: 35px;
+  text-align: center;
+  margin-top: -7px;
+  font-weight: 500;
+  font-size: 11px;
+  position: absolute;
+}
+
+.signinError {
+  color: orangered;
+  padding: 6px;
+  margin: 18px;
+}
+
+.sign-error-container {
+  list-style-type: none;
+  margin: 16px;
+  text-align: center;
+  margin-top: -19px;
+  font-weight: 00;
+  position: absolute;
+}
