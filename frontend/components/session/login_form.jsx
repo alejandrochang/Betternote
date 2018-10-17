@@ -23,29 +23,55 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <h1>Log In</h1>
-          <label> Username
-            <input
-              onChange={this.handleInput('username')}
-              type="text"
-              value={this.state.username}/>
-          </label>
-          <label> Password
-            <input
-              onChange={this.handleInput('password')}
-              type="password"
-              value={this.state.password}/>
-          </label>
-          <label> Email
-            <input
-              onChange={this.handleInput('email')}
-              type="email"
-              value={this.state.email}/>
-          </label>
-          <button onClick={this.handleSubmit}>Sign In</button>
-        </form>
+      <div className="background">
+        <div className="form-wrapper">
+          <div className="wrapper">
+            <div className="login-body">
+              <div className="login-heading">
+                <img className="ever-logo" src="https://cdn6.aptoide.com/imgs/c/b/7/cb7a9d24c7a7dd2ef2a1cb9463240217_icon.png?w=240"/>
+                  <span><h1 className="login-title">Betternote</h1></span>
+                  <span><h4 className="login-message">Remember everything important.</h4></span>
+                  <span className="google-bar">Continue with google
+                    <img className="google-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png"/>
+                  </span>
+              </div>
+              <div className="login-form">
+                <form className="form-styling" onSubmit={this.handleSubmit}>
+                  <label>
+                    <input
+                      placeholder="Username"
+                      onChange={this.handleInput('username')}
+                      type="text"
+                      value={this.state.username}
+                      required/>
+                  </label>
+                  <label>
+                    <input
+                      placeholder="Email address"
+                      onChange={this.handleInput('email')}
+                      type="email"
+                      value={this.state.email}
+                      reuired/>
+                  </label>
+                  <label>
+                    <input
+                      placeholder="Password"
+                      onChange={this.handleInput('password')}
+                      type="password"
+                      value={this.state.password}
+                      required/>
+                  </label>
+                  <button onClick={this.handleSubmit}>Sign In</button>
+                </form>
+              </div>
+              <div className="context-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="login-footer">
+        </div>
       </div>
     )
   }

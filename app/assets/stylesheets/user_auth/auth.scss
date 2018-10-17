@@ -129,6 +129,113 @@ text-decoration: underline;
   position: relative;
 }
 
+.background {
+  background-image: url(https://www.evernote.com/static/static_css_resources/bb6ce0ce7affff91989d4aab2ba9fa53.png);
+  background-repeat: repeat;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.form-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 512px;
+  margin: 0px auto 28px auto;
+  padding: 62.12px 99px 48px;
+  width: 314px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+  background-color: #ffffff;
+  height: 478px;
+  margin-top: -3px;
+}
+
+.google-bar {
+  height: 40px;
+  border-radius: 7px;
+  border: solid 1px #d0d0d0;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-content: center;
+  flex-basis: auto;
+  font-size: 15px;
+  color: #6a6a6a;
+  max-width: 308px;
+}
+
+.google-bar:hover {
+  background-color: #f4f4f4;
+}
+
+.google-img {
+  width: 20px;
+  position: absolute;
+  margin-left: 43px;
+}
+
+.ever-logo {
+  max-width: 110px;
+}
+
+.login-body {
+
+}
+
+.login-heading {
+  text-align: center;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, helvetica, arial, sans-serif;
+  font-style: normal;
+  margin-bottom: 60px;
+  margin-top: -30px;
+}
+
+.login-form {
+
+}
+
+.form-styling {
+  width: 322px;
+}
+
+.login-title {
+  font-size: 33px;
+  font-family: -webkit-body;
+  margin-top: 0px;
+  margin-left: 8px;
+}
+
+.login-message {
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, helvetica, arial, sans-serif;
+  font-style: normal;
+  margin-top: -1px;
+  margin-left: 14px;
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+}
+
 #nav-login-container {
   padding: 8px;
   margin-right: 8%;

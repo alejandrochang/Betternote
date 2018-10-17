@@ -9,32 +9,27 @@ class NavBar extends React.Component {
   render() {
     return (
       <div>
-
         <nav>
-          <div class="home-navbar">
-              <img
-                align="middle"
-                class="home-logo-img"
-                src="https://www.devicemagic.com/wp-content/uploads/2017/01/evernote-1.png"/>
+          <div class="home-navbar"><img align="middle" class="home-logo-img" src="https://www.devicemagic.com/wp-content/uploads/2017/01/evernote-1.png"/>
               <span class="home-logo-text">BETTERNOTE</span>
 
-
-                <a className='nav-links' href="https://www.linkedin.com/in/alejandro-chang-086936126/">
-    						<i class="favicon-linkedin"></i>
-    						<span></span>
+                <a
+                  className='linkedin-icon-container'
+                  href="https://www.linkedin.com/in/alejandro-chang-086936126/">
+    						<span><img className="linkedin-icon" src="https://png.icons8.com/metro/1600/linkedin.png"/></span>
     					  </a>
 
-                <a className='nav-links' href="https://github.com/alejandrochang">
-                <i class="favicon-github"></i>
-                <span></span>
+                <a
+                  className='github-icon-container'
+                  href="https://github.com/alejandrochang">
+                  <span><img className="github-icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/></span>
                 </a>
 
                 <a id="nav-login-container">
-                  <a id="nav-login" href="#/main">Log in</a>
+                  <a id="nav-login" href="#/login">Log in</a>
                 </a>
           </div>
         </nav>
-
       </div>
     );
   }
