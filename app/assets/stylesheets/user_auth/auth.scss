@@ -155,13 +155,13 @@ text-decoration: underline;
   border-radius: 10px;
   text-align: left;
   background-color: #ffffff;
-  height: 478px;
+  height: 610px;
   margin-top: -3px;
 }
 
 .google-bar {
   height: 40px;
-  border-radius: 7px;
+  border-radius: 6px;
   border: solid 1px #d0d0d0;
   cursor: pointer;
   position: relative;
@@ -176,7 +176,8 @@ text-decoration: underline;
   flex-basis: auto;
   font-size: 15px;
   color: #6a6a6a;
-  max-width: 308px;
+  max-width: 297px;
+  padding-left: 13px;
 }
 
 .google-bar:hover {
@@ -184,17 +185,54 @@ text-decoration: underline;
 }
 
 .google-img {
-  width: 20px;
+  width: 21px;
   position: absolute;
-  margin-left: 43px;
+  margin-left: 45px;
+}
+
+.row-div {
+  height: 0px;
+  margin-top: 9px;
+  margin-bottom: -10px;
+  margin-left: 0px;
 }
 
 .ever-logo {
   max-width: 110px;
 }
 
-.login-body {
+h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #dbd9d9;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  color: #dbd9d9;
+  margin-top: 18px;
+  margin-left: -1px;
+}
 
+h3 span {
+  background:#fff;
+  padding:0 10px;
+}
+
+.signin-button {
+  width: 305px;
+  color: #ffffff;
+  height: 44px;
+  cursor: pointer;
+  background-color: #00a82d;
+  border-radius: 6px;
+  border-color: #00a82d;
+  box-shadow: darkgrey;
+  margin-left: 0px;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+.signin-button:hover {
+  background-color: #228b22;
 }
 
 .login-heading {
@@ -211,14 +249,18 @@ text-decoration: underline;
 }
 
 .form-styling {
-  width: 322px;
+  width: 313px;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 5px;
 }
 
 .login-title {
-  font-size: 33px;
+  font-size: 44px;
   font-family: -webkit-body;
-  margin-top: 0px;
+  margin-top: -14px;
   margin-left: 8px;
+  font-weight: bolder;
 }
 
 .login-message {
@@ -227,9 +269,51 @@ text-decoration: underline;
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, helvetica, arial, sans-serif;
   font-style: normal;
-  margin-top: -1px;
+  margin-top: -8px;
   margin-left: 14px;
   font-weight: 100;
+}
+
+.word-underlining {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 100;
+  color: #737373;
+  padding-top: 27px;
+  margin-left: 70px;
+}
+
+.create-account-link {
+  font-size: 14px;
+  color: forestgreen;
+  margin-left: 99px;
+  margin-top: 51px;
+  position: absolute;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.remember-checkbox-2 {
+  position: relative;
+  margin-left: 41px;
+  margin-top: 181px;
+}
+
+.remember-message-2 {
+  font-size: 15px;
+  margin-left: 68px;
+  font-weight: 100;
+  color: #737373;
+  margin-top: -27px;
+}
+
+.reminder-password {
+  font-size: 12px;
+  color: #00a82d;
+  padding-left: 19px;
+  position: absolute;
+  margin-left: 81px;
+  margin-top: -10px;
 }
 
 body {

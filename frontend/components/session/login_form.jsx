@@ -34,6 +34,7 @@ class LoginForm extends React.Component {
                   <span className="google-bar">Continue with google
                     <img className="google-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png"/>
                   </span>
+                  <h3><span>or</span></h3>
               </div>
               <div className="login-form">
                 <form className="form-styling" onSubmit={this.handleSubmit}>
@@ -61,8 +62,15 @@ class LoginForm extends React.Component {
                       value={this.state.password}
                       required/>
                   </label>
-                  <button onClick={this.handleSubmit}>Sign In</button>
+                  <button className="signin-button" onClick={this.handleSubmit}>Sign In</button>
                 </form>
+                <div>
+                <input class="remember-checkbox-2" type="checkbox"/>
+                  <p className="remember-message-2">Remember me for 30 days</p>
+                </div>
+                <span className="reminder-password">Forgot password?</span>
+                <span className="word-underlining">Don't have an account?</span>
+                <a href="#/" className="create-account-link">Create Account</a>
               </div>
               <div className="context-footer">
               </div>
