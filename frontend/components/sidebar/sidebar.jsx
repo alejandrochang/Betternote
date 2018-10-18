@@ -18,7 +18,7 @@ class Sidebar extends React.Component {
   }
 
   componentDidMount() {
-    // fetchNotes All notes
+    this.props.fetchNotes();
     // fetchTags All tags
     // fetchNotebooks All notebooks => All sub-notes of a notebook
   }

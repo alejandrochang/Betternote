@@ -193,7 +193,7 @@
 
 .first-notebook {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-family: sans-serif;
   font-weight: 100;
   color: #a99d9d;
@@ -201,7 +201,7 @@
 
 .header-bar {
   padding: 10px;
-  padding-left: 70px;
+  padding-left: 51px;
   padding-top: 19px;
 }
 
@@ -210,11 +210,17 @@
 }
 
 .share-button {
-  height: 50px;
-  width: 67px;
+  width: 55px;
   border-radius: 10px;
   position: relative;
-  margin-left: 400px;
+  color: #ffffff;
+  border-color: #00a82d;
+  background-color: #00a82d;
+  font-size: 13px;
+  padding: 5px 8px;
+  margin: 0 12px 0 0;
+  margin-left: 433px;
+  margin-top: -2px;
 }
 
 .share-button:hover {
@@ -230,4 +236,12 @@
   border: 0px solid;
   font-size: 14px;
   font-weight: 100;
+}
+
+.expand-icon {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 7px;
+  top: 6px;
 }

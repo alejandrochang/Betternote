@@ -69,6 +69,7 @@ h3 {
 .demo-button:hover {
   border: 1px solid #17c955;
   color: #3cbb69;
+  cursor: pointer;
 }
 
 .sign-up-button {
@@ -409,11 +410,20 @@ a#demo-user:hover {
   position: absolute;
 }
 
-.signinError {
+.error-container-2 {
+  list-style-type: none;
+  width: 213px;
+  margin: -5px;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: 500;
+  font-size: 11px;
+  position: absolute;
   color: orangered;
-  padding: 6px;
-  margin: 18px;
+  padding: 5px;
+  z-index: 2;
 }
+
 
 .sign-error-container {
   list-style-type: none;

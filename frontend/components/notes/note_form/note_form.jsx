@@ -22,7 +22,8 @@ class NoteForm extends React.Component {
         <div className="quill-container">
           <div className="quill-header">
             <div className="header-bar">
-              <a className="first-notebook" href="#/main">First Notebook</a>
+              <img className="expand-icon" src="http://pngimages.net/sites/default/files/resize-png-image-32280.png"/>
+              <a className="first-notebook" href="#/main">| First Notebook</a>
               <input className="share-button" type="submit" value="Share"></input>
             </div>
           </div>
