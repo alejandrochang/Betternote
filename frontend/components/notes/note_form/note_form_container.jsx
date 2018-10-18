@@ -11,7 +11,7 @@ import { fetchCurrentNote } from '../../../actions/note_actions';
 
 const mapStateToProps = state => {
   return {
-    allNotes: state.entities.notes,
+    note: Object.values(state.entities.notes).slice(-1)[0]
   };
 }
 

@@ -5,15 +5,32 @@ class NoteForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {title: "", body: ""};
+
+    this.state = {title: "", body: "", text: "", id: ""};
+    this.handleChangeBody = this.handleChangeBody.bind(this);
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (this.state.id != newProps.note.id) {
+      const text = newProps.note.title + newProps.note.body
+      this.setState({title: newProps.note.title, body: newProps.note.body, id: newProps.note.id, text: text})
+    }
   }
 
   handleChangeBody(text) {
-    this.setState({ body: text})
+    const idx = text.indexOf('/');
+    const nextIdx = idx + 3;
+    const title = text.slice(0, nextIdx);
+    const body = text.slice(nextIdx);
+    setTimeout( () => {
+      this.props.updateNote(this.state)
+    }, 3000)
+
+    this.setState({title: title, body: body, text: text, id: this.props.note.id})
   }
 
-  handleChangeTitle(title) {
-    this.setState({ title: title})
+  updateNote() {
+
   }
 
   render() {
@@ -32,7 +49,7 @@ class NoteForm extends React.Component {
             className="quill"
             theme="snow"
             modules={modules}
-            value={this.state.body}
+            value={this.state.text}
             onChange={this.handleChangeBody}/>
         </div>
         <div className="quill-footer">

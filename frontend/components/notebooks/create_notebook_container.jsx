@@ -21,9 +21,16 @@ class CreateNotebookForm extends React.Component {
 
   render() {
     return(
-      <div>
-        
+      <div className="notebook-creator">
+        <form className="notebook-form">
+          <h2>Create New Notebook</h2>
+          <span>Notebooks are useful for grouping notes around a common topic. They can be private or shared.</span>
+          <span className="notebook-name">Name</span>
+          <input className="new-notebook-input" type="text" onChange={this.handleSubmit("title")} value={this.props.title} placeholder="Notebook Name" autofocus />
 
+          <input id="new-notebook-input" onClick={this.handleSubmit()} placeholder="Notebook Name" value="text">
+          </input>
+        </form>
       </div>
     );
   }
