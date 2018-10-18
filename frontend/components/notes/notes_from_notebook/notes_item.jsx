@@ -1,4 +1,9 @@
 import React from 'react';
+import ReactHtmlParser, {
+  processNodes,
+  convertNodeToElement,
+  htmlparser2
+} from 'react-html-parser';
 
 class NotesListItem extends React.Component {
   constructor(props) {
@@ -24,8 +29,8 @@ class NotesListItem extends React.Component {
       <div>
         <div className="individual-note">
           <div className="note-container">
-            <div className="note-title"><span className="note-words-1">{this.props.note.title}</span></div>
-            <div className="note-body"><span className="note-words-2">{this.props.note.body}</span></div>
+            <div className="note-title"><span className="note-words-1">{ReactHtmlParser(this.props.note.title)}</span></div>
+            <div className="note-body"><span className="note-words-2">{ReactHtmlParser(this.props.note.body)}</span></div>
             <div className="note-date"><span className="note-words-3">{new Date(this.props.note.updated_at.toUpperCase()).toDateString()}</span></div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import ReactQuill from 'react-quill';
 import React from 'react';
 
+
 class NoteForm extends React.Component {
   constructor(props) {
     super(props);
@@ -29,10 +30,6 @@ class NoteForm extends React.Component {
     this.setState({title: title, body: body, text: text, id: this.props.note.id})
   }
 
-  updateNote() {
-
-  }
-
   render() {
     return (
       <div>
@@ -49,7 +46,7 @@ class NoteForm extends React.Component {
             className="quill"
             theme="snow"
             modules={modules}
-            value={this.state.text}
+            value={ this.state.text }
             onChange={this.handleChangeBody}/>
         </div>
         <div className="quill-footer">
