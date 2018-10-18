@@ -15,13 +15,15 @@ class NavBar extends React.Component {
 
                 <a
                   className='linkedin-icon-container'
-                  href="https://www.linkedin.com/in/alejandro-chang-086936126/">
+                  href="https://www.linkedin.com/in/alejandro-chang-086936126/"
+                  target="_blank">
     						<span><img className="linkedin-icon" src="https://png.icons8.com/metro/1600/linkedin.png"/></span>
     					  </a>
 
                 <a
                   className='github-icon-container'
-                  href="https://github.com/alejandrochang">
+                  href="https://github.com/alejandrochang"
+                  target="_blank">
                   <span><img className="github-icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/></span>
                 </a>
 
