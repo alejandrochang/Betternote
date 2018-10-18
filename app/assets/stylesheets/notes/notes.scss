@@ -41,11 +41,11 @@
 
 .notebar-words {
   font-size: 20px;
-  margin-top: 22px;
+  margin-top: 30px;
   margin-left: 28px;
-  margin-bottom: -18px;
+  margin-bottom: -25px;
   overflow: hidden;
-  color: dimgray;
+  color: #333333;
 }
 
 .notebar-title-container {
@@ -161,10 +161,10 @@
 }
 
 .quill {
-  bottom: 60px;
+  bottom: -29px;
   position: relative;
-  height: 437px;
-  margin-top: 150px;
+  height: 557px;
+  margin-top: 8px;
 }
 
 .quill-container {
@@ -187,9 +187,38 @@
 
 .quill-header {
   background-color: #ffffff;
-  height: 60px;
-  width: 50px;
+  height: 67px;
+  width: 695px;
+}
 
+.first-notebook {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #a99d9d;
+}
+
+.header-bar {
+  padding: 10px;
+  padding-left: 70px;
+  padding-top: 19px;
+}
+
+.header-bar:hover {
+  text-decoration: underline;
+}
+
+.share-button {
+  height: 50px;
+  width: 67px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 400px;
+}
+
+.share-button:hover {
+  color: forestgreen;
 }
 
 #add-tag {

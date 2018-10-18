@@ -20,7 +20,12 @@ class NoteForm extends React.Component {
     return (
       <div>
         <div className="quill-container">
-          <div className="quill-header"></div>
+          <div className="quill-header">
+            <div className="header-bar">
+              <a className="first-notebook" href="#/main">First Notebook</a>
+              <input className="share-button" type="submit" value="Share"></input>
+            </div>
+          </div>
           <ReactQuill
             placeholder={"TITLE \n\nStart writing, drag files or choose a template"}
             className="quill"
@@ -40,19 +45,20 @@ class NoteForm extends React.Component {
 }
 
 var toolbarOptions = [
-  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+  ['bold', 'italic', 'underline', 'strike'],
   ['blockquote', 'code-block'],
-  [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+  [{ 'header': 1 }, { 'header': 2 }],
   [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-  [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-  [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-  [{ 'direction': 'rtl' }],                         // text direction
-  [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+  [{ 'script': 'sub'}, { 'script': 'super' }],
+  [{ 'indent': '-1'}, { 'indent': '+1' }],
+  [{ 'direction': 'rtl' }],
+  [{ 'size': ['small', false, 'large', 'huge'] }],
   [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-  [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+  [{ 'color': [] }, { 'background': [] }],
   [{ 'font': [] }],
   [{ 'align': [] }],
-  ['clean']                                         // remove formatting button
+  ['clean'],
+  ['link', 'image', 'video', 'formula']
 ];
 
 const modules = {
