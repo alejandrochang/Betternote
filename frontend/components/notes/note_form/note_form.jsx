@@ -9,6 +9,7 @@ class NoteForm extends React.Component {
 
     this.state = {title: "", body: "", text: "", id: ""};
     this.handleChangeBody = this.handleChangeBody.bind(this);
+    this.handleChangeTitle = this.handleChangeTitle.bind(this);
   }
 
   componentDidMount() {
@@ -26,16 +27,20 @@ class NoteForm extends React.Component {
     }
   }
 
+  handleChangeTitle(text) {
+    const title = '';
+  }
+
   handleChangeBody(text) {
-    const idx = text.indexOf('/');
-    const nextIdx = idx + 3;
-    const title = text.slice(0, nextIdx);
-    const body = text.slice(nextIdx);
+    // const idx = text.indexOf('/');
+    // const nextIdx = idx + 3;
+    // const title = text.slice(0, nextIdx);
+    const body = text.slice(0);
     setTimeout( () => {
       this.props.updateNote(this.state)
     }, 3000)
 
-    this.setState({title: title, body: body, text: text, id: this.props.note.id})
+    this.setState({body: body, text: text, id: this.props.note.id})
   }
 
   render() {
