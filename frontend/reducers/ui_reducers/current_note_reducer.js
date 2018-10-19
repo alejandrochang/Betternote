@@ -1,5 +1,5 @@
-import { CURRENT_NOTE, CLOSE_CURRENT_NOTE } from '../../actions/note_actions';
-import { LOGOUT_CURREN_USER } from '../../actions/session_actions';
+import { CURRENT_NOTE, RECEIVE_NOTES, CLOSE_CURRENT_NOTE, CHANGE_NOTE } from '../../actions/note_actions';
+import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
 
 
 const currentNoteReducer = (state = null, action) => {
@@ -8,8 +8,12 @@ const currentNoteReducer = (state = null, action) => {
       return action.currentNote;
     case CLOSE_CURRENT_NOTE:
       return null;
-    case LOGOUT_CURREN_USER:
+    case CHANGE_NOTE:
+      return action.id;
+    case LOGOUT_CURRENT_USER:
       return null;
+    case RECEIVE_NOTES:
+      return Object.keys(action.notes)[0];
     default:
       return state;
   }

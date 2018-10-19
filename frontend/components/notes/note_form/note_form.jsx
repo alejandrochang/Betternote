@@ -11,10 +11,18 @@ class NoteForm extends React.Component {
     this.handleChangeBody = this.handleChangeBody.bind(this);
   }
 
+  componentDidMount() {
+    this.props.fetchNotes();
+    if (this.props.note) {
+      this.props.changeNote(this.props.note.id);
+    }
+  }
+
   componentWillReceiveProps(newProps) {
-    if (this.state.id != newProps.note.id) {
-      const text = newProps.note.title + newProps.note.body
-      this.setState({title: newProps.note.title, body: newProps.note.body, id: newProps.note.id, text: text})
+
+    if (this.state.id != newProps.currentNote.id) {
+      const text = newProps.currentNote.title + newProps.currentNote.body
+      this.setState({title: newProps.currentNote.title, body: newProps.currentNote.body, id: newProps.currentNote.id, text: text})
     }
   }
 
@@ -31,6 +39,9 @@ class NoteForm extends React.Component {
   }
 
   render() {
+    if (!this.props.currentNote) {
+      return null;
+    }
     return (
       <div>
         <div className="quill-container">

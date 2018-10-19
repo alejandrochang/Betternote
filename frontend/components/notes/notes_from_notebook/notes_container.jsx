@@ -5,7 +5,8 @@ import {
   fetchNote,
   fetchCurrentNote,
   closeCurrentNote,
-  deleteNote
+  deleteNote,
+  changeNote
 } from '../../../actions/note_actions';
 
 const mapStateToProps = state => {
@@ -20,7 +21,8 @@ const mapDispatchToProps = dispatch => {
     fetchNote: (id) => dispatch(fetchNote(id)),
     deleteNote: (id) => dispatch(deleteNote(id)),
     fetchCurrentNote: (note) => dispatch(fetchCurrentNote(note)),
-    closeCurrentNote: () => dispatch(closeCurrentNote())
+    closeCurrentNote: () => dispatch(closeCurrentNote()),
+    changeNote: (id) => dispatch(changeNote(id))
   };
 }
 

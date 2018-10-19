@@ -5,7 +5,8 @@ export const RECEIVE_NOTE = 'RECEIVE_NOTE';
 export const DELETE_NOTE = 'DELETE_NOTE';
 export const RECEIVE_NOTE_ERRORS = 'RECEIVE_NOTE_ERRORS';
 export const CURRENT_NOTE = 'CURRENT_NOTE';
-export const CLOSE_CURRENT_NOTE = 'CLOSE_CURRENT_NOTE'
+export const CLOSE_CURRENT_NOTE = 'CLOSE_CURRENT_NOTE';
+export const CHANGE_NOTE = 'CHANGE_NOTE';
 
 export const fetchNotes = () => dispatch => {
   return (
@@ -48,6 +49,13 @@ export const deleteNote = (id) => dispatch => (
     })
   )
 );
+
+export const changeNote = id => {
+  return {
+    type: CHANGE_NOTE,
+    id: id
+  }
+}
 
 export const fetchCurrentNote = note => {
   return {

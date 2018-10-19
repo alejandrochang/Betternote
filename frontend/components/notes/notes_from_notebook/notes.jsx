@@ -23,7 +23,7 @@ class Notes extends React.Component {
   renderAllNotes() {
     if (this.props.notes) {
       return this.props.notes.map((note) =>
-        <NotesItem props={this.props} key={note.id} note={note}></NotesItem>
+        <NotesItem props={this.props} key={note.id} note={note} changeNote={this.props.changeNote}></NotesItem>
       );
     }
   }
