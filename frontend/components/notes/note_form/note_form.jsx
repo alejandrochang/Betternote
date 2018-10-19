@@ -27,8 +27,12 @@ class NoteForm extends React.Component {
     }
   }
 
-  handleChangeTitle(text) {
-    const title = '';
+  handleChangeTitle(title) {
+    setTimeout( () => {
+      this.props.updateNote(this.state)
+    }, 3000)
+
+    this.setState({title: title})
   }
 
   handleChangeBody(text) {
@@ -57,7 +61,7 @@ class NoteForm extends React.Component {
               <input className="share-button" type="submit" value="Share"></input>
             </div>
           </div>
-          <input className="quill-title" placeholder="Title"></input>
+          <input className="quill-title" placeholder="Title" onChange={() => this.handleChangeTitle}></input>
           <ReactQuill
             placeholder={"Start writing, drag files or choose a template"}
             className="quill"

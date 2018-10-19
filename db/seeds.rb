@@ -15,16 +15,18 @@
 # note1 = Note.create!(title: "Mr. Travolta is an actor", user_id: user2.id, notebook_id: notebook1.id)
 # note1 = Note.create!(title: "test note", user: user1, notebook: notebook1)
 
-# User.destroy_all
-# Note.destroy_all
-# Notebook.destroy_all
+User.destroy_all
+Note.destroy_all
+Notebook.destroy_all
+
 #
-# user1 = User.create!(username: 'alejandrochang', password: "california", email: 'chang@gmail.com')
-# notebook1 = Notebook.create!(user_id: user1.id, title: "First Notebook")
-# note1 = Note.create!(title: "Tasks to complete:", user_id: user1.id, notebook_id: notebook1.id)
-#
-# user2 = User.create!(username: "demo-user", password: "demo12345", email: "demo@gmail.com")
-# notebook2 = Notebook.create!(user_id: user1.id, title: "First Notebook")
-# note2 = Note.create!(title: "Vacation Plans", user_id: user2.id, notebook_id: notebook2.id)
-# note3 = Note.create!(title: "Important Reminders", user_id: user2.id, notebook_id: notebook2.id)
-# note4 = Note.create!(title: "Coding Research", user_id: user2.id, notebook_id: notebook2.id)
+user1 = User.create!(username: 'alejandrochang', password: "california", email: 'chang@gmail.com')
+notebook1 = Notebook.create!(user_id: user1.id, title: "First Notebook")
+note1 = Note.create!(title: "Tasks to complete:", user_id: user1.id, notebook_id: notebook1.id)
+
+user2 = User.create!(username: "demo-user", password: "demo12345", email: "demo@gmail.com")
+notebook2 = Notebook.create!(user_id: user2.id, title: "First Notebook")
+note2 = Note.create!(title: "Vacation Plans", body: "Travel from Argentina to Chile", user_id: user2.id, notebook_id: notebook2.id)
+note3 = Note.create!(title: "Important Reminders", body: "Do the homework, study for the test and get plenty of sleep", user_id: user2.id, notebook_id: notebook2.id)
+note4 = Note.create!(title: "Coding Research", body: "Study React, MERN stack etc..", user_id: user2.id, notebook_id: notebook2.id)
+note4 = Note.create!(title: "Project-1", body: "Complete schema, organize back-end and fron-end structure.", user_id: user2.id, notebook_id: notebook2.id)
