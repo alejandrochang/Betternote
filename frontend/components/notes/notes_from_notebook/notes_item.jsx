@@ -26,7 +26,6 @@ class NotesListItem extends React.Component {
   render() {
     let title = ReactHtmlParser(this.props.note.title);
     let body = ReactHtmlParser(this.props.note.body);
-    // debugger
     return (
       <div>
         <div onClick={() => this.props.changeNote(this.props.note.id)} className="individual-note">
