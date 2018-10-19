@@ -14,3 +14,15 @@
 # notebook1 = Notebook.create!(user_id: user2.id, title: "Test Notebook # 2")
 # note1 = Note.create!(title: "Mr. Travolta is an actor", user_id: user2.id, notebook_id: notebook1.id)
 # note1 = Note.create!(title: "test note", user: user1, notebook: notebook1)
+
+# User.destroy_all
+# Note.destroy_all
+# Notebook.destroy_all
+#
+# user1 = User.create!(username: 'alejandrochang', password: "california", email: 'chang@gmail.com')
+# notebook1 = Notebook.create!(user_id: user1.id, title: "First Notebook")
+# note1 = Note.create!(title: "Tasks to complete:", user_id: user1.id, notebook_id: notebook1.id)
+# 
+# user2 = User.create!(username: "demo-user", password: "demo12345", email: "demo@gmail.com")
+# notebook2 = Notebook.create!(user_id: user1.id, title: "First Notebook")
+# note2 = Note.create!(title: "Tasks to complete:", user_id: user2.id, notebook_id: notebook2.id)

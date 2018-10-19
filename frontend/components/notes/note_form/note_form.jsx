@@ -20,7 +20,7 @@ class NoteForm extends React.Component {
 
   componentWillReceiveProps(newProps) {
 
-    if (this.state.id != newProps.currentNote.id) {
+    if (this.state.id !== newProps.currentNote.id) {
       const text = newProps.currentNote.title + newProps.currentNote.body
       this.setState({title: newProps.currentNote.title, body: newProps.currentNote.body, id: newProps.currentNote.id, text: text})
     }
@@ -52,8 +52,9 @@ class NoteForm extends React.Component {
               <input className="share-button" type="submit" value="Share"></input>
             </div>
           </div>
+          <input className="quill-title" placeholder="Title"></input>
           <ReactQuill
-            placeholder={"TITLE \n\nStart writing, drag files or choose a template"}
+            placeholder={"Start writing, drag files or choose a template"}
             className="quill"
             theme="snow"
             modules={modules}
