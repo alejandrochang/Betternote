@@ -12,21 +12,13 @@ class Home extends React.Component {
   render() {
     return(
       <div class="main-home">
-
-        <div>
-          <NavbarContainer />
-        </div>
-
-        <div className="first-splashview">
+        <NavbarContainer />
+        <div className="signup-form-container">
           <div className="big-home-slide">
             <h1 className="big-slide">Meet Betternote, the best way to organize your life. </h1>
-            <p className="small-slide">Be efficient with your time, plan at a moments
-              notice and focus on what really matters.</p>
+            <p className="small-slide">Be efficient with your time, plan at a moment's
+              notice and focus on what really matters. Explore the best note-taking app now!</p>
           </div>
-        </div>
-
-        <div className="signup-form-container">
-          <h2 className="signup-message-text">Sign Up for Free</h2>
           <Route component={SignupFormContainer} />
         </div>
 
