@@ -60,32 +60,30 @@
 }
 
 .splash-main {
-  padding-left: 24%;
-  // background-color: blue;
-  display: inline-flex;
-  width: 71%;
-  padding-top: 115px;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 430px;
+  background-color: black;
 }
 
-.splash-content {
-  // background-color: red;
-  font-family: times;
-  max-width: 305px;
-  margin-bottom: 140px;
-  margin-left: 22px;
-  margin-top: 138px;
-  font-size: 17px;
-
+.splash-main-2 {
+  display: flex;
+  color: #fff;
+  background-color: black;
+  height: 200px;
+  justify-content: space-around;
 }
 
 .splash-font {
-  margin-top: 46px;
-  margin-right: 74px;
-  background: transparent;
-  font-size: 105%;
-  margin-left: 25px;
+  font-size: 21px;
   text-align: center;
-
+  padding-left: 125px;
+  padding-right: 125px;
+font-family: 'Playfair Display', serif;
 }
 
 .splash-headings {
@@ -96,12 +94,6 @@
 .splash-headings-special {
   text-align: center;
   margin-left: 45px;
-}
-
-.splash-font-special {
-  text-align: center;
-  margin-left: 62px;
-  margin-top: 49px;
 }
 
 .linkedin-icon {
@@ -120,15 +112,63 @@
 
 .splash-background {
   position: relative;
-  top: 70px;
-  height: 617px;
+  top: 135px;
+  height: 650px;
   width: 100%;
-  background-color: #00a82d;
-  color: #fff;
+  background-color: #f7f7f7;
+  color: black;
 }
 
 .pattern-splash {
   background-repeat: repeat;
   width: 100%;
   height: 617px;
+}
+
+.splash-image {
+  width: 350px;
+  height: 350px;
+}
+
+.splash-inner-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: inherit;
+}
+
+.splash-header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.splash-footer {
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-top: 60px;
+
+}
+
+.pic-heading {
+  font-family: "Soleil_Light", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.pic-head {
+  margin-top: 60px;
+}
+
+.identical-cards {
+  padding: 0 40px;
+  text-align: center;
+  width: 100%;
+  color: #888b8d;
+  font-family: "Soleil_Light", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 2;
 }

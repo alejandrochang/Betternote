@@ -8,48 +8,30 @@ class Splash extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <div className="splash-main">
-          <div className="splash-img-one">
-  					<img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-1.png"/>
-  				</div>
-
-          <div className="splash-content">
-  						<h2 className="splash-headings">Remember everything important</h2>
-  						<p className="splash-font">
-  							Declutter your life by storing your notes, ideas, tasks and reminders all in one place.
-  						</p>
+    return <div>
+      <div className="splash-background">
+        <div className="splash-inner-container">
+          <div className="splash-header">
+            <img className="pic-head" src="https://evernote.com/c/assets/homepage/homepage-focus.png?699f7824a2e9eaa8" />
           </div>
+          <h2 class="pic-heading">Focus on what matters most</h2>
+          <div className="splash-footer" />
+          <div className="identical-cards">Manage everything, from big projects to personal moments.</div>
+          <div className="identical-cards">Capture ideas and inpiration in notes, voice and pictures.</div>
+          <div className="identical-cards">Never lose track of your tasks and deadlines.</div>
         </div>
-
-        <div className="splash-main">
-          <div className="splash-content">
-  						<h2 className="splash-headings-special">Stay organized, wherever and whenever</h2>
-  						<p className="splash-font-special">
-  							Plan better, manage projects and keep records through notes, tables, checklists, attachements and more.
-  						</p>
-          </div>
-          <div className="splash-img-two">
-  					<img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-2.png"/>
-  				</div>
-        </div>
-
-        <div className="splash-main">
-          <div className="splash-img-one">
-  					<img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-3.png"/>
-  				</div>
-
-          <div className="splash-content">
-  						<h2 className="splash-headings">Collaborate with your team</h2>
-  						<p className="splash-font">
-  							Stay on top of deadlines, clients and meetings all the time, anywhere.
-  						</p>
-          </div>
-        </div>
-
       </div>
-    );
+        <div className="splash-main">
+          <img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-1.png" />
+          <img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-2.png" />
+          <img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-3.png" />
+        </div>
+        <div className="splash-main-2">
+          <p className="splash-font">Declutter your life by storing your notes, ideas, tasks and reminders all in one place.</p>
+          <p className="splash-font">Plan better, manage projects and keep records through notes, tables, checklists, attachements and more.</p>
+          <p className="splash-font">Stay on top of deadlines, clients and meetings all the time, anywhere.</p>
+        </div>
+      </div>;
   }
 }
 

@@ -10,25 +10,23 @@ class Home extends React.Component {
   }
 
   render() {
-    return(
-      <div class="main-home">
+    return <div class="main-home">
         <NavbarContainer />
         <div className="signup-form-container">
           <div className="big-home-slide">
-            <h1 className="big-slide">Meet Betternote, the best way to organize your life. </h1>
-            <p className="small-slide">Be efficient with your time, plan at a moment's
-              notice and focus on what really matters. Explore the best note-taking app now!</p>
+            <h1 className="big-slide">
+              Meet Betternote, the best way to organize your life.{" "}
+            </h1>
+            <p className="small-slide">
+              Be efficient with your time, plan at a moment's notice and
+              focus on what really matters. Explore the best note-taking app
+              now!
+            </p>
           </div>
           <Route component={SignupFormContainer} />
         </div>
-        {/* <div> */}
-          <SplashContainer />
-        {/* </div> */}
-        <div className="splash-background">
-          <img  className="pattern-splash" src="https://evernote.com/img/backgrounds/patterns/main-green.png" />
-        </div>
-      </div>
-    );
+        <SplashContainer />
+      </div>;
   }
 }
 
