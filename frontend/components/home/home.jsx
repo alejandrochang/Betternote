@@ -21,9 +21,11 @@ class Home extends React.Component {
           </div>
           <Route component={SignupFormContainer} />
         </div>
-
-        <div>
+        {/* <div> */}
           <SplashContainer />
+        {/* </div> */}
+        <div className="splash-background">
+          <img  className="pattern-splash" src="https://evernote.com/img/backgrounds/patterns/main-green.png" />
         </div>
       </div>
     );
