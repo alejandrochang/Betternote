@@ -1,6 +1,6 @@
 # BETTERNOTE
 
-[Betternote](https://betternote-evernote.herokuapp.com/#/) is a clone of the famous note takin application Evernote.Betternote is a single page application developed using Ruby, Rails, and PostgreSQL for the backend and React and Redux for the frontend. Betternote incorporated React-Quill, and HoverMaster.css libraries. The project was designed and built in 10 days.
+[Betternote](https://betternote-evernote.herokuapp.com/#/) is a clone of the famous note taking application Evernote.Betternote is a single page application developed using Ruby, Rails, and PostgreSQL for the backend and React and Redux for the frontend. Betternote incorporated React-Quill, and HoverMaster.css libraries. The project was designed and built in 10 days.
 
 Betternote lets users create notebooks that contain notes which can be edited and managed. This allows users to control and manage their notes through notebooks.
 
