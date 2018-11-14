@@ -313,8 +313,13 @@ h3 span {
   margin-top: -10px;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
+  position: fixed;
 }
 
 #nav-login-container {
