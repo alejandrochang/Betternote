@@ -153,12 +153,13 @@ class Sidebar extends React.Component {
                 <span className="sidebar-words">Upgrade</span>
               </div>
             </div>
+            <div className="sidebar-footer">
+              <img className="trumpet-img" src="https://cdn0.iconfinder.com/data/icons/people-and-lifestyle/64/music-trumpet-art-orchestra-512.png" />
+              <span className="feedback-words">Send Feedback</span>
+            </div>
           </div>
-          <div className="sidebar-footer">
-            <div className="gray-line-3"></div>
-            <img className="trumpet-img" src="https://cdn0.iconfinder.com/data/icons/people-and-lifestyle/64/music-trumpet-art-orchestra-512.png"/>
-            <span className="feedback-words">Send Feedback</span>
-          </div>
+          <div className="gray-line-3"></div>
+
         </div>
       </div>
     );

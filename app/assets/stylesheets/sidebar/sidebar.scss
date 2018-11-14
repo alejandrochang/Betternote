@@ -273,12 +273,15 @@
 }
 
 .sidebar-footer {
-  height: 15px;
+  position: absolute;
+  width: -webkit-fill-available;
+  top: 92%;
 }
 
 .gray-line-3 {
   border-top: 1px solid rgba(180, 180, 180, 0.14902);
-  margin-top: 401px;
+  top: 69%;
+  position: relative;
 }
 
 .trumpet-img {
