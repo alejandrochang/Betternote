@@ -5,13 +5,13 @@
 Betternote lets users create notebooks that contain notes which can be edited and managed. This allows users to control and manage their notes through notebooks.
 
 ## Home page
-(/app/assets/images/ss1.png)
+![alt text](/app/assets/images/ss1.png)
 
 ## Sign In Page
-(/app/assets/images/ss2.png)
+![alt text](/app/assets/images/ss2.png)
 
 ## Main Page
-(/app/assets/images/ss3.png)
+![alt text](/app/assets/images/ss3.png)
 
 ## Features
 * Secured frontend to backend user authentication using BCrypt.
@@ -22,8 +22,6 @@ Betternote lets users create notebooks that contain notes which can be edited an
 
 # Displaying User's Notebooks
 Notebooks are assigned on a user basis and are only accesable through that specific user. When the user is logged in to Betternote, he will only see the Notebooks that are created. A *First Notebook* is created upon creating a user.
-
-![alt text](file:///Users/alejandrochang/Desktop/shot1.png)
 
 Every user gets their own unique session id that is userd to sign in. When a user is signed in, that session is is used to match the user with his particular notebooks, notes and tags.
 
