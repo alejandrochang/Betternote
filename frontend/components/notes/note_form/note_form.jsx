@@ -42,11 +42,6 @@ class NoteForm extends React.Component {
 
   handleChangeBody(text) {
     const body = text.slice(0);
-    // setTimeout( () => {
-    //   this.props.updateNote(this.state)
-    // }, 1000)
-
-    // this.setState({body: body, text: text, id: this.props.note.id})
     this.setState({ body: body, text: text, id: this.props.currentNote.id}, debounce(this.actionNote, 1000));
   }
 
