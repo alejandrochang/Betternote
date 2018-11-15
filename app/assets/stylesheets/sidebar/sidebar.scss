@@ -1,9 +1,5 @@
 .sidebar-main {
-  // border: 3px solid #1a1a1a;
-  // display: flex;
-  // flex-shrink: 0;
-  // flex-direction: column;
-  // color: white;
+  box-sizing: border-box;
   height: 100vh; /* Full-height: remove this if you want "auto" height */
   width: 241px; /* Set the width of the sidebar */
   position: absolute; /* Fixed Sidebar (stay in place on scroll) */
@@ -275,12 +271,12 @@
 .sidebar-footer {
   position: absolute;
   width: -webkit-fill-available;
-  top: 93%;
+  top: 95%;
 }
 
 .gray-line-3 {
   border-top: 1px solid rgba(180, 180, 180, 0.14902);
-  top: 71%;
+  top: 72%;
   position: relative;
 }
 

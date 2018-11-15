@@ -16,6 +16,7 @@ class NavBar extends React.Component {
                 <a
                   className='linkedin-icon-container'
                   href="https://www.linkedin.com/in/alejandro-chang-086936126/"
+                  rel="noopener noreferrer"
                   target="_blank">
     						<span><img className="linkedin-icon" src="https://png.icons8.com/metro/1600/linkedin.png"/></span>
     					  </a>
@@ -23,6 +24,7 @@ class NavBar extends React.Component {
                 <a
                   className='github-icon-container'
                   href="https://github.com/alejandrochang"
+                  rel="noopener noreferrer"
                   target="_blank">
                   <span><img className="github-icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/></span>
                 </a>
