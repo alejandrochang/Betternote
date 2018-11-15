@@ -11,7 +11,7 @@ Betternote lets users create notebooks that contain notes which can be edited an
 ![alt text](/app/assets/images/ss2.png)
 
 ## Main Page
-![alt text](/app/assets/images/ss3.png)
+![alt text](/app/assets/images/ss4.png)
 
 ## Features
 * Secured frontend to backend user authentication using BCrypt.

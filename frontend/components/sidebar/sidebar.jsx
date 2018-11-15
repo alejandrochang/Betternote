@@ -106,7 +106,7 @@ class Sidebar extends React.Component {
       <div className="sidebar-background">
         { this.renderDropDown() }
         <div className="sidebar-main">
-          <div classname='dropdown-header' onClick={this.toggleDropdown}>
+          <div className='dropdown-header' onClick={this.toggleDropdown}>
               <img className="sidebar-img" src="https://www.shareicon.net/data/512x512/2016/11/22/855132_notes_512x512.png"/>
               <span id="name-style-2">{this.props.currentUser.username}</span>
               <img className="down-arrow-img" src="https://www.thrivingparish.org/wp-content/uploads/2018/01/white-down-arrow-png-2-300x300.png"/>

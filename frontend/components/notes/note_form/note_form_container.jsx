@@ -12,6 +12,7 @@ import { fetchNotebooks } from '../../../actions/notebook_actions';
 import { fetchCurrentNote } from '../../../actions/note_actions';
 
 const mapStateToProps = state => {
+  console.log(state)
   return {
     note: Object.values(state.entities.notes)[0],
     currentNote: state.entities.notes[state.ui.currentNote]

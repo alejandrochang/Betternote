@@ -272,15 +272,14 @@
 .share-button {
   width: 55px;
   border-radius: 10px;
-  position: relative;
+  position: absolute;
   color: #ffffff;
   border-color: #00a82d;
   background-color: #00a82d;
   font-size: 13px;
   padding: 5px 8px;
-  margin: 0 12px 0 0;
-  margin-left: 433px;
   margin-top: -2px;
+  right: 6%;
 }
 
 .share-button:hover {

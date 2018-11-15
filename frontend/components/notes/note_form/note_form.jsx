@@ -5,7 +5,7 @@ import React from 'react';
 class NoteForm extends React.Component {
   constructor(props) {
     super(props);
-
+    // console.log(props, 1);
 
     this.state = {title: "", body: "", text: "", id: ""};
     this.handleChangeBody = this.handleChangeBody.bind(this);
@@ -20,6 +20,8 @@ class NoteForm extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
+    // console.log(this.props.currentNote, 10);
+    // console.log(newProps.currentNote, 20);
 
     if (this.state.id !== newProps.currentNote.id) {
       const text = newProps.currentNote.title + newProps.currentNote.body
@@ -68,7 +70,7 @@ class NoteForm extends React.Component {
             theme="snow"
             modules={modules}
             value={ this.state.text }
-            onChange={this.handleChangeBody}/>
+            onChange={() => this.handleChangeBody}/>
         </div>
         <div className="quill-footer">
           <div className="inner-quill-footer">
