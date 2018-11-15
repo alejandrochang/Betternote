@@ -7,7 +7,7 @@ import { fetchNotes } from '../../actions/note_actions';
 
 
 const mapStateToProps = state => {
-  console.log(state);
+  // console.log(state);
   return {
     currentUser: state.session.currentUser,
     modal: state.ui.modal,

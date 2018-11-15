@@ -28,6 +28,7 @@ class Splash extends React.Component {
           </div>
         </div>
         <div className="splash-main">
+          {/* <img className="backdrop" src="./app/assets/images/splash-background.png"/> */}
           <img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-1.png" />
           <img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-2.png" />
           <img className="splash-image" src="https://evernote.com/c/assets/marketing/home/benefit-3.png" />

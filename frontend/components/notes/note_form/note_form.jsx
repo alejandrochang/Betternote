@@ -1,11 +1,11 @@
 import ReactQuill from 'react-quill';
 import React from 'react';
+import { debounce } from 'lodash';
 
 
 class NoteForm extends React.Component {
   constructor(props) {
     super(props);
-    // console.log(props, 1);
 
     this.state = {title: "", body: "", text: "", id: ""};
     this.handleChangeBody = this.handleChangeBody.bind(this);
@@ -14,22 +14,25 @@ class NoteForm extends React.Component {
 
   componentDidMount() {
     this.props.fetchNotes();
-    if (this.props.note) {
-      this.props.changeNote(this.props.note.id);
-    }
+    // if (this.props.note) {
+    //   this.props.changeNote(this.props.note.id);
+    // }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log("prevprops", prevProps);
+    console.log("prevState", prevState);
   }
 
   componentWillReceiveProps(newProps) {
-    // console.log(this.props.currentNote, 10);
-    // console.log(newProps.currentNote, 20);
-
     if (this.state.id !== newProps.currentNote.id) {
-      const text = newProps.currentNote.title + newProps.currentNote.body
+      const text = newProps.currentNote.body //newProps.currentNote.title +
       this.setState({title: newProps.currentNote.title, body: newProps.currentNote.body, id: newProps.currentNote.id, text: text})
     }
   }
 
   handleChangeTitle(title) {
+    // console.log(title, "title");
     setTimeout( () => {
       this.props.updateNote(this.state)
     }, 3000)
@@ -38,15 +41,19 @@ class NoteForm extends React.Component {
   }
 
   handleChangeBody(text) {
-    // const idx = text.indexOf('/');
-    // const nextIdx = idx + 3;
-    // const title = text.slice(0, nextIdx);
     const body = text.slice(0);
-    setTimeout( () => {
-      this.props.updateNote(this.state)
-    }, 3000)
+    // setTimeout( () => {
+    //   this.props.updateNote(this.state)
+    // }, 1000)
 
-    this.setState({body: body, text: text, id: this.props.note.id})
+    // this.setState({body: body, text: text, id: this.props.note.id})
+    this.setState({ body: body, text: text, id: this.props.currentNote.id}, debounce(this.actionNote, 1000));
+  }
+
+  actionNote() {
+    if (this.props.currentNote) {
+      return this.props.updateNote(this.state);
+    }
   }
 
   render() {
@@ -70,7 +77,7 @@ class NoteForm extends React.Component {
             theme="snow"
             modules={modules}
             value={ this.state.text }
-            onChange={() => this.handleChangeBody}/>
+            onChange={this.handleChangeBody}/>
         </div>
         <div className="quill-footer">
           <div className="inner-quill-footer">
