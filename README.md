@@ -26,10 +26,14 @@ Notebooks are assigned on a user basis and are only accesable through that speci
 Every user gets their own unique session id that is userd to sign in. When a user is signed in, that session is is used to match the user with his particular notebooks, notes and tags.
 
 # Saving User's updates
-There are many different ways to handle the users's input which is created inside the Quill Editor. At first, I used a setTimeout function that was triggered after every three seconds updating the current note that the user was using. However, after close inspection and the realization that setTimeout is determined by a series of factors that could affect the user's experience I opted out to use a more efficient approach - debounce. Debounce is a much better event handler, as it allows us to group multiple sequential calls into a single one. The sequential calls in this situation occur while the user is typing in the text editor. As soon as the user stops typing, the event is triggered through debounce updating the user's current note. 
+There are many different ways to handle the users's input which is created inside the Quill Editor. At first, I used a setTimeout function that was triggered after every three seconds updating the current note that the user was using. However, after close inspection and the realization that setTimeout is determined by a series of factors that could affect the user's experience I opted out to use a more efficient approach - debounce. Debounce is a much better event handler, as it allows us to group multiple sequential calls into a single one. The sequential calls in this situation occur while the user is typing in the text editor. As soon as the user stops typing, the event is triggered through debounce updating the user's current note body and title. 
 
 ```javascript
- handleChangeBody(text) {
+ handleChangeTitle(e) {
+    this.setState({title: e.target.value}, debounce(this.actionNote, 1000));
+  }
+
+  handleChangeBody(text) {
     const body = text.slice(0);
     this.setState({ body: body, text: text, id: this.props.currentNote.id}, debounce(this.actionNote, 1000));
   }
