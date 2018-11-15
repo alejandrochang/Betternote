@@ -62,7 +62,7 @@ class NoteForm extends React.Component {
           </div>
           <input value={ this.state.title } className="quill-title" placeholder="Title" onChange={this.handleChangeTitle}></input>
           <ReactQuill
-            placeholder={"Start writing, drag files or choose a template"}
+            placeholder={"Start writing, drag files or upload something"}
             className="quill"
             theme="snow"
             modules={modules}
