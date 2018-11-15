@@ -38,6 +38,10 @@ There are many different ways to handle the users's input which is created insid
     this.setState({ body: body, text: text, id: this.props.currentNote.id}, debounce(this.actionNote, 1000));
   }
 ```
+
+# Betternote in Action
+![Alt Text](app/assets/images/gif1.mp4)
+
 # Project Design
 In the 10 day-window for working on this project. Betternote was focused on the design and the implementation of the main functionalities of the original website Evernote. Organizing code and establishing specific styling was prioritizzed over every single functinoality that Evernote does.
 
