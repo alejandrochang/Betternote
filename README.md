@@ -40,7 +40,7 @@ There are many different ways to handle the users's input which is created insid
 ```
 
 # Betternote in Action
-![Betternote in Action](https://github.com/alejandrochang/Betternote/blob/master/app/assets/images/gif1.gif)
+![Alt](app/images/gi1.gif)
 
 # Project Design
 In the 10 day-window for working on this project. Betternote was focused on the design and the implementation of the main functionalities of the original website Evernote. Organizing code and establishing specific styling was prioritizzed over every single functinoality that Evernote does.
