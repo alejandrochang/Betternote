@@ -14,9 +14,6 @@ class NoteForm extends React.Component {
 
   componentDidMount() {
     this.props.fetchNotes();
-    // if (this.props.note) {
-    //   this.props.changeNote(this.props.note.id);
-    // }
   }
 
   componentDidUpdate(prevProps, prevState) {

@@ -41,16 +41,16 @@ There are many different ways to handle the users's input which is created insid
 
 # Betternote in Action
 ![](/app/assets/images/gif1.gif)
-)
+
 
 # Project Design
 In the 10 day-window for working on this project. Betternote was focused on the design and the implementation of the main functionalities of the original website Evernote. Organizing code and establishing specific styling was prioritizzed over every single functinoality that Evernote does.
 
 # Technologies
-Convenience and speed was prioritized over scalability.
+Due to the timeline of this project, convenience and speed was prioritized over scalability.
 
 # Future Features
-* Taags and Taggings Function
-* Notebooks editing and creating
+* Tags and Taggings Function
+* Notebooks (editing and creating features)
 * Sorting Search bar based on Notes or Notebook
 * Additional features on the quill
