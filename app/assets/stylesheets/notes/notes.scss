@@ -310,3 +310,16 @@
   right: 7px;
   top: 6px;
 }
+
+.delete-note {
+  cursor: pointer;
+  width: 16px;
+  position: inherit;
+}
+
+.delete-div {
+  position: inherit;
+  background: transparent;
+  border: none;
+  float: right;
+}

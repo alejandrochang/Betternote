@@ -6,6 +6,7 @@ import { debounce } from 'lodash';
 class NoteForm extends React.Component {
   constructor(props) {
     super(props);
+    console.log("props", props);
 
     this.state = {title: "", body: "", text: "", id: ""};
     this.handleChangeBody = this.handleChangeBody.bind(this);
@@ -16,12 +17,20 @@ class NoteForm extends React.Component {
     this.props.fetchNotes();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log("prevprops", prevProps);
-    console.log("prevState", prevState);
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log("prevprops", prevProps);
+  //   console.log("prevState", prevState);
+  // }
 
   componentWillReceiveProps(newProps) {
+    // console.log("state", this.state.id)
+    // console.log("currenNote", newProps.currentNote.id)
+
+    // if (newProps.currentNote === undefined) {
+    //   break;
+    // }
+
+    console.log("newprops", newProps);
     if (this.state.id !== newProps.currentNote.id) {
       const text = newProps.currentNote.body //newProps.currentNote.title +
       this.setState({title: newProps.currentNote.title, body: newProps.currentNote.body, id: newProps.currentNote.id, text: text})
