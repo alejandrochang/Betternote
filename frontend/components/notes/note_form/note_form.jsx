@@ -23,14 +23,12 @@ class NoteForm extends React.Component {
   // }
 
   componentWillReceiveProps(newProps) {
-    // console.log("state", this.state.id)
-    // console.log("currenNote", newProps.currentNote.id)
-
-    // if (newProps.currentNote === undefined) {
-    //   break;
-    // }
-
-    console.log("newprops", newProps);
+    // console.log("currenNoteId", newProps.currentNote.id)
+    // console.log("state2", this.state.id)
+    // let nextId = newProps.currentNote.id + 1;
+    if (newProps.currentNote === undefined) {
+      return null;
+    }
     if (this.state.id !== newProps.currentNote.id) {
       const text = newProps.currentNote.body //newProps.currentNote.title +
       this.setState({title: newProps.currentNote.title, body: newProps.currentNote.body, id: newProps.currentNote.id, text: text})
