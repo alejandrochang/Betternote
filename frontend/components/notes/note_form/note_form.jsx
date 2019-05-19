@@ -6,7 +6,7 @@ import { debounce } from 'lodash';
 class NoteForm extends React.Component {
   constructor(props) {
     super(props);
-    console.log("props", props);
+    // console.log("props", props);
 
     this.state = {title: "", body: "", text: "", id: ""};
     this.handleChangeBody = this.handleChangeBody.bind(this);

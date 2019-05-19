@@ -10,12 +10,12 @@ class Home extends React.Component {
   }
 
   render() {
-    return <div class="main-home">
+    return <div className="main-home">
         <NavbarContainer />
         <div className="signup-form-container">
           <div className="big-home-slide">
             <h1 className="big-slide">
-              Meet Betternote, the best way to organize your life{" "}
+              Meet Betternote, the best way to organize your life.{" "}
             </h1>
             <p className="small-slide">
               Be efficient with your time, plan at a moment's notice and

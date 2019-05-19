@@ -82,7 +82,7 @@ class LoginForm extends React.Component {
                   <button className="signin-button" onClick={this.handleSubmit}>Sign In</button>
                 </form>
                 <div>
-                <input class="remember-checkbox-2" type="checkbox"/>
+                <input className="remember-checkbox-2" type="checkbox"/>
                   <p className="remember-message-2">Remember me for 30 days</p>
                 </div>
                 <span className="reminder-password">Forgot password?</span>

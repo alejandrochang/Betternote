@@ -10,8 +10,8 @@ class NavBar extends React.Component {
     return (
       <div>
         <nav>
-          <div class="home-navbar"><img align="middle" class="home-logo-img" src="https://www.devicemagic.com/wp-content/uploads/2017/01/evernote-1.png"/>
-              <span class="home-logo-text">BETTERNOTE</span>
+          <div className="home-navbar"><img align="middle" className="home-logo-img" src="https://www.devicemagic.com/wp-content/uploads/2017/01/evernote-1.png"/>
+              <span className="home-logo-text">BETTERNOTE</span>
 
                 <a
                   className='linkedin-icon-container'
@@ -26,7 +26,7 @@ class NavBar extends React.Component {
                   href="https://github.com/alejandrochang"
                   rel="noopener noreferrer"
                   target="_blank">
-                  <span><img className="github-icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/></span>
+                  <span><img className="github-icon" src="https://img.icons8.com/ios/104/000000/github-filled.png"/></span>
                 </a>
 
                 <a id="nav-login-container">

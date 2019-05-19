@@ -14,7 +14,7 @@ class Splash extends React.Component {
             <div className="splash-header">
               <img className="pic-head" src="https://evernote.com/c/assets/homepage/homepage-focus.png?699f7824a2e9eaa8" />
             </div>
-            <h2 class="pic-heading">Focus on what matters most</h2>
+            <h2 className="pic-heading">Focus on what matters most</h2>
             <div className="splash-footer" />
             <div className="identical-cards">
               Manage everything, from big projects to personal moments.
@@ -49,7 +49,7 @@ class Splash extends React.Component {
         </div>
         <div className="rights">
           <p>© 2018 Betternote Corporation. All rights reserved.</p>
-          <ul class="links">
+          <ul className="links">
             <li className="sub-link">
               <a href="/">Security &nbsp;&nbsp; |</a>
             </li>

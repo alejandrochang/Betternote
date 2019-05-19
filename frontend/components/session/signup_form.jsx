@@ -97,7 +97,7 @@ class SignupForm extends React.Component {
           </div>
           <div className="create-account">
           <input className="sign-up-button" type="submit" value="Create Account"/>
-          <input class="remember-checkbox" type="checkbox"/>
+          <input className="remember-checkbox" type="checkbox"/>
             <p className="remember-message">Remember me for 30 days</p>
           </div>
         </form>
